@@ -75,7 +75,7 @@ public class EmployeeController {
         
         EmployeeHist hist = new EmployeeHist(employee);
         hist.persist();
-		//sendMessage("sgpdesai@gmail.com","A new Employee with id " + employee.getEmployee_id()+ " and name " + employee.getFirst_name() + " "+ employee.getLast_name() + " has been created.");
+		//sendMessage("xxx@gmail.com","A new Employee with id " + employee.getEmployee_id()+ " and name " + employee.getFirst_name() + " "+ employee.getLast_name() + " has been created.");
         
 		if (!userInput) {
 			return "redirect:/employees/"
