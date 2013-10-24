@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kreativ_kerp_domain_report_Reports" object="${reports}" path="/reportses" z="PhuCdqpVJbQ/kw/FNmhQWO1WaeI=">
+        <field:display field="year" id="s_com_kreativ_kerp_domain_report_Reports_year" object="${reports}" z="4vYE+G9U6upbKMRkTB8OONKti+c="/>
+        <field:display field="month" id="s_com_kreativ_kerp_domain_report_Reports_month" object="${reports}" z="teJSyiMW23CwsQFZ4k1O7wepo8Y="/>
+        <field:display field="options" id="s_com_kreativ_kerp_domain_report_Reports_Options" object="${reports}" z="h72PRCHWDgqNfv5PpgxW2agq6vk="/>
+    </page:show>
+</div>

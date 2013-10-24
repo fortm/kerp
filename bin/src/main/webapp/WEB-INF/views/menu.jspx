@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" xmlns:sec="http://www.springframework.org/security/tags" id="menu" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_employeehist" z="hM61YY2lKNW6TA4Iv6pwHaRmXTE=">
+            <!--menu:item id="i_employeehist_list" messageCode="global_menu_list" url="/employeehists?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="V09hHLzZrhEEw+k+HE48J8H31Gw="/-->
+            <!-- menu:item id="i_employeehist_list" messageCode="global_menu_list" url="/employeehists?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="V09hHLzZrhEEw+k+HE48J8H31Gw="/-->
+            <!--menu:item id="i_employeehist_new" messageCode="global_menu_new" url="/employeehists?form" z="E6KDMReqgt4W9RZGttxj+pgjVTI="/-->
+            <menu:item id="i_employeehist_list" messageCode="global_menu_list" url="/employeehists?page=1&amp;size=${empty param.size ? 10 : param.size}" z="27opkiqr5+bwFOrRzRKcYrMt8Pg="/>
+            <menu:item id="fi_employeehist_employee_id" messageCode="global_menu_find" url="/employeehists?find=ByEmployee_id&amp;form" z="pGZetqbqzInRdkQ+Y4d5viyPszE="/>
+            <menu:item id="i_employeehist_new" messageCode="global_menu_new" url="/employeehists?form" z="E6KDMReqgt4W9RZGttxj+pgjVTI="/>
+        </menu:category>
+        <sec:authorize ifAllGranted="ROLE_ADMIN">
+            <menu:category id="c_employee" z="sxLyQbJ/qSw9Reoi1NHvJhkZ/rU=">
+                <menu:item id="i_employee_new" messageCode="global_menu_new" url="/employees?form" z="+S/pgOAdANt9JPGnS20kM8qTu00="/>
+                <!--menu:item id="i_employee_list" messageCode="global_menu_list" url="/employees?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="YzmRBI+yzLifxZxrpgFQqxwsG0g="/-->
+                <menu:item id="fi_employee_employee_id" messageCode="global_menu_find" url="/employees?find=ByEmployee_id&amp;form" z="fY9eGhNstIENF+iV6fmndMaQbDQ="/>
+                <!--menu:item id="i_employee_list" messageCode="global_menu_list" url="/employees?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="YzmRBI+yzLifxZxrpgFQqxwsG0g="/-->
+                <!-- menu:item id="i_employee_list" messageCode="global_menu_list" url="/employees?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="YzmRBI+yzLifxZxrpgFQqxwsG0g="/-->
+                <menu:item id="i_employee_list" messageCode="global_menu_list" url="/employees?page=1&amp;size=${empty param.size ? 10 : param.size}" z="IfTXfF5mBLDCW+DUkfuN3Wgvias="/>
+            </menu:category>
+        </sec:authorize>
+        <menu:category id="c_supervisor" z="C619HntksWdB9ZL/pyrJe1G1+Y8=">
+            <menu:item id="i_supervisor_new" messageCode="global_menu_new" url="/supervisors?form" z="yM/hOT+lIfly4dPo354OTsMKoPQ="/>
+            <menu:item id="i_supervisor_list" messageCode="global_menu_list" url="/supervisors?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="CSe4EeeswQBKgxRnXq9DI0lGr48="/>
+        </menu:category>
+        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__assigntoprojectindex_id" messageCode="global_generic" url="/assigntoproject/index" z="Z4bjQAk5ksQIA1OIn0JJIts7US4="/>
+        </menu:category>
+        <menu:category id="c_project" z="u0PzRIwMDmEv/J6b8vbKakXGIdQ=">
+            <menu:item id="i_project_new" messageCode="global_menu_new" url="/projects?form" z="1BazRC1rLnod0a+MpP1flWTvehA="/>
+            <menu:item id="i_project_list" messageCode="global_menu_list" url="/projects?page=1&amp;size=${empty param.size ? 10 : param.size}" z="GHL05c3Rvr+eKDgRCk3Ttak0W+g="/>
+        </menu:category>
+    </menu:menu>
+</div>

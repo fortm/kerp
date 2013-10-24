@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_kreativ_kerp_domain_report_IndividualFinancialReport" modelAttribute="individualFinancialReport" path="/individualfinancialreports" versionField="Version" z="EFuM+c0arxTYypRQfoddWip1sHM=">
+        <field:select field="employee" id="c_com_kreativ_kerp_domain_report_IndividualFinancialReport_employee" itemValue="employee_id" items="${employees}" path="/employees" z="Wh4mXjTbUQJc60MZnVxXEsy0Vtw="/>
+        <field:input field="year" id="c_com_kreativ_kerp_domain_report_IndividualFinancialReport_year" required="true" z="8ZpUovKHv14fBiCWqa3gxFZdkpY="/>
+        <field:select field="Options" id="c_com_kreativ_kerp_domain_report_IndividualFinancialReport_Options" items="${individualreportyearlyoptionses}" path="individualreportyearlyoptionses" required="true" z="JVCSz05lIfyIaxBbn/DL4tpY1SQ="/>
+    </form:update>
+</div>

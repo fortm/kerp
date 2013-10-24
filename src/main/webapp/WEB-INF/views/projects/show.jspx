@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show delete="false" id="ps_com_kreativ_kerp_domain_Project" object="${project}" path="/projects" z="CyubMmTf7qI92G6TUDoEOlDgnSQ=">
+        <field:display field="project_name" id="s_com_kreativ_kerp_domain_Project_project_name" object="${project}" z="oFVx1qqMYzd5lZ3aeRToZ/5gTFw="/>
+        <field:display field="supervisor" id="s_com_kreativ_kerp_domain_Project_supervisor" object="${project}" z="0+/6iZisJf3k72R1nC2d9LhhDpI="/>
+        <field:display date="true" dateTimePattern="${project_start_date_date_format}" field="start_date" id="s_com_kreativ_kerp_domain_Project_start_date" object="${project}" z="3KkDG0mqBMeLcwvcCh8wI9SAY1Y="/>
+    </page:show>
+</div>

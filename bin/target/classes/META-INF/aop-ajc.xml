@@ -1,0 +1,32 @@
+<aspectj>
+<aspects>
+<aspect name="com.kreativ.kerp.domain.Project_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.web.EmployeeController_Roo_Controller_Finder"/>
+<aspect name="com.kreativ.kerp.domain.Supervisor_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.Employee_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHist_Roo_JavaBean"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHist_Roo_Audittimestamp"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHist_Roo_Entity"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHist_Roo_Finder"/>
+<aspect name="com.kreativ.kerp.domain.Employee_Roo_Audittimestamp"/>
+<aspect name="com.kreativ.kerp.domain.Employee_Roo_JavaBean"/>
+<aspect name="com.kreativ.kerp.domain.Supervisor_Roo_ToString"/>
+<aspect name="com.kreativ.kerp.domain.Employee_Roo_Entity"/>
+<aspect name="com.kreativ.kerp.web.EmployeeController_Roo_Controller"/>
+<aspect name="com.kreativ.kerp.web.EmployeeHistController_Roo_Controller_Finder"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHist_Roo_ToString"/>
+<aspect name="com.kreativ.kerp.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="com.kreativ.kerp.domain.Supervisor_Roo_Entity"/>
+<aspect name="com.kreativ.kerp.domain.Project_Roo_JavaBean"/>
+<aspect name="com.kreativ.kerp.domain.Employee_Roo_ToString"/>
+<aspect name="com.kreativ.kerp.domain.Supervisor_Roo_Audittimestamp"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHist_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.Project_Roo_ToString"/>
+<aspect name="com.kreativ.kerp.web.ProjectController_Roo_Controller"/>
+<aspect name="com.kreativ.kerp.domain.Project_Roo_Entity"/>
+<aspect name="com.kreativ.kerp.web.SupervisorController_Roo_Controller"/>
+<aspect name="com.kreativ.kerp.domain.Employee_Roo_Finder"/>
+<aspect name="com.kreativ.kerp.web.EmployeeHistController_Roo_Controller"/>
+</aspects>
+</aspectj>
+

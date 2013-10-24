@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport" modelAttribute="consolidatedEmpSalReport" path="/consolidatedempsalreports" render="${empty dependencies}" z="WjdFjJc/wyOwFczvgp36B7dmG8I=">
+        <field:select field="employee" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_employee" itemValue="employee_id" items="${employees}" path="/employees" render="false" z="user-managed"/>
+        <field:input field="year" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_year" required="true" z="jF6BGV0h/N9ILeaspJ/OEbejXYY="/>
+        <field:select field="month" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_month" items="${monthses}" path="monthses" required="true" z="9mLTOW6NJvM/omfWnEZTQECDWuM="/>
+        <field:input field="project" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_project" render="false" z="user-managed"/>
+        <field:input field="role" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_role" render="false" z="user-managed"/>
+        <field:input field="Attendance" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_Attendance" render="false" z="user-managed"/>
+        <field:input field="basic" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_basic" render="false" z="user-managed"/>
+        <field:input field="da" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_da" render="false" z="user-managed"/>
+        <field:input field="special_allowance" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_special_allowance" render="false" z="user-managed"/>
+        <field:input field="washing_allowance" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_washing_allowance" render="false" z="user-managed"/>
+        <field:input field="medical_allowance" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_medical_allowance" render="false" z="user-managed"/>
+        <field:input field="educational_allowance" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_educational_allowance" render="false" z="user-managed"/>
+        <field:input field="conveyance_allowance" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_conveyance_allowance" render="false" z="user-managed"/>
+        <field:input field="other_allowance" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_other_allowance" render="false" z="user-managed"/>
+        <field:input field="ot_rate" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_ot_rate" render="false" z="user-managed"/>
+        <field:input field="ex_gratia" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_ex_gratia" render="false" z="user-managed"/>
+        <field:input field="hra_percentage" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_hra_percentage" render="false" z="user-managed"/>
+        <field:input field="service_charges" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_service_charges" render="false" z="user-managed"/>
+        <field:checkbox field="bonus_flag" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_bonus_flag" render="false" z="user-managed"/>
+        <field:input field="canteen_allowance" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_canteen_allowance" render="false" z="user-managed"/>
+        <field:input field="ot_days" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_ot_days" render="false" z="user-managed"/>
+        <field:input field="ot" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_ot" render="false" z="user-managed"/>
+        <field:input field="gross_salary" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_gross_salary" render="false" z="user-managed"/>
+        <field:input field="hra" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_hra" render="false" z="user-managed"/>
+        <field:input field="gross_Earnings" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_gross_Earnings" render="false" z="user-managed"/>
+        <field:input field="WC" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_WC" render="false" z="user-managed"/>
+        <field:input field="pf" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_pf" render="false" z="user-managed"/>
+        <field:input field="esic" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_esic" render="false" z="user-managed"/>
+        <field:input field="professional_tax" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_professional_tax" render="false" z="user-managed"/>
+        <field:input field="LWF" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_LWF" render="false" z="user-managed"/>
+        <field:input field="sd" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_sd" render="false" z="user-managed"/>
+        <field:input field="atm" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_atm" render="false" z="user-managed"/>
+        <field:input field="total_deductions" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_total_deductions" render="false" z="user-managed"/>
+        <field:input field="net_payment" id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_net_payment" render="false" z="user-managed"/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport" render="${not empty dependencies}" z="pZvbvTDbhAP7YCqLKpDqxi228hw="/>
+</div>

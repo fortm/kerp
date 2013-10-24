@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bottomMargin="20" columnWidth="572" leftMargin="20" name="employeesalarydataReportDetail" orientation="Portrait" pageHeight="792" pageWidth="612" resourceBundle="jasperoo" rightMargin="20" topMargin="20" whenResourceMissingType="Key" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="com.kreativ.kerp.domain.Employee"/>
+    <import value="com.kreativ.kerp.reference.Months"/>
+    <field class="java.lang.Long" name="id"/>
+	<field class="com.kreativ.kerp.domain.Employee" name="employee"/>
+    <field class="java.lang.String" name="year"/>
+    <field class="com.kreativ.kerp.reference.Months" name="month"/>
+    <field class="java.lang.String" name="project"/>
+    <field class="java.lang.String" name="role"/>
+    <field class="java.lang.Integer" name="Attendance"/>
+    <field class="java.lang.Float" name="basic"/>
+    <field class="java.lang.Float" name="da"/>
+    <field class="java.lang.Float" name="special_allowance"/>
+    <field class="java.lang.Float" name="washing_allowance"/>
+    <field class="java.lang.Float" name="medical_allowance"/>
+    <field class="java.lang.Float" name="educational_allowance"/>
+    <field class="java.lang.Float" name="conveyance_allowance"/>
+    <field class="java.lang.Float" name="other_allowance"/>
+    <field class="java.lang.Float" name="ot_rate"/>
+    <field class="java.lang.Float" name="ex_gratia"/>
+    <field class="java.lang.Float" name="hra_percentage"/>
+    <field class="java.lang.Float" name="service_charges"/>
+    <field class="java.lang.Boolean" name="bonus_flag"/>
+    <field class="java.lang.Float" name="canteen_allowance"/>
+    <field class="java.lang.Float" name="ot_days"/>
+    <field class="java.lang.Float" name="ot"/>
+    <field class="java.lang.Float" name="gross_salary"/>
+    <field class="java.lang.Float" name="hra"/>
+    <field class="java.lang.Float" name="gross_Earnings"/>
+    <field class="java.lang.Float" name="WC"/>
+    <field class="java.lang.Float" name="pf"/>
+    <field class="java.lang.Float" name="esic"/>
+    <field class="java.lang.Float" name="professional_tax"/>
+    <field class="java.lang.Float" name="LWF"/>
+    <field class="java.lang.Float" name="sd"/>
+    <field class="java.lang.Float" name="atm"/>
+    <field class="java.lang.Float" name="total_deductions"/>
+    <field class="java.lang.Float" name="net_payment"/>
+    <pageHeader>
+		<band height="85">
+			<image hAlign="Center" scaleImage="RetainShape">
+				<reportElement height="53" width="572" x="0" y="0"/>
+				<imageExpression class="java.lang.String"><![CDATA["../../images/banner-graphic.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement forecolor="#000000" height="31" mode="Opaque" width="572" x="0" y="54"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="FreeSerif" isBold="true" isItalic="false" isPdfEmbedded="true" size="24"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{label_com_kreativ_kerp_domain_employeesalarydata}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<!-- Edit this band with entries for each field that is to be displayed in the report. -->
+		<band height="642" splitType="Stretch">
+			<textField>
+				<reportElement height="20" width="125" x="0" y="0"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String">$R{jasperoo.id}</textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement height="20" width="446" x="126" y="0"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Long">$F{id}</textFieldExpression>
+			</textField>
+		<textField>
+                <reportElement height="18" width="125" x="0" y="20"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.employee}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="20"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$F{employee}.toString()</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="38"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.year}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="38"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$F{year}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="56"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.month}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="56"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$F{month}.toString()</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="74"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.project}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="74"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$F{project}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="92"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.role}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="92"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$F{role}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="110"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.Attendance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="110"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Integer">$F{Attendance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="128"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.basic}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="128"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{basic}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="146"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.da}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="146"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{da}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="164"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.special_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="164"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{special_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="182"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.washing_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="182"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{washing_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="200"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.medical_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="200"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{medical_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="218"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.educational_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="218"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{educational_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="236"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.conveyance_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="236"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{conveyance_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="254"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.other_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="254"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{other_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="272"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.ot_rate}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="272"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{ot_rate}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="290"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.ex_gratia}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="290"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{ex_gratia}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="308"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.hra_percentage}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="308"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{hra_percentage}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="326"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.service_charges}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="326"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{service_charges}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="344"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.bonus_flag}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="344"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Boolean">$F{bonus_flag}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="362"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.canteen_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="362"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{canteen_allowance}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="380"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.ot_days}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="380"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{ot_days}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="398"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.ot}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="398"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{ot}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="416"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.gross_salary}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="416"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{gross_salary}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="434"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.hra}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="434"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{hra}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="452"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.gross_Earnings}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="452"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{gross_Earnings}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="470"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.WC}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="470"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{WC}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="488"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.pf}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="488"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{pf}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="506"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.esic}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="506"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{esic}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="524"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.professional_tax}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="524"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{professional_tax}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="542"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.LWF}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="542"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{LWF}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="560"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.sd}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="560"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{sd}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="578"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.atm}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="578"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{atm}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="596"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.total_deductions}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="596"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{total_deductions}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="125" x="0" y="614"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String">$R{jasperoo.EmployeeSalaryDatas.net_payment}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement height="18" width="446" x="126" y="614"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.Float">$F{net_payment}</textFieldExpression>
+            </textField>
+        </band>
+	</detail>
+	<pageFooter>
+		<band height="25">
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement height="20" width="115" x="0" y="0"/>
+				<textElement verticalAlignment="Bottom"/>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement height="20" width="80" x="632" y="0"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom"/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement height="20" width="40" x="712" y="0"/>
+				<textElement verticalAlignment="Bottom"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

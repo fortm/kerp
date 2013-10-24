@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_hist_EmployeeHist" items="${employeehists}" z="H+cJ8FiBz3WTrjBQmdSwgAxg7WI=">
+        <table:table data="${employeehists}" delete="false" id="l_com_kreativ_kerp_domain_hist_EmployeeHist" path="/employeehists" update="false" z="r/dM8nc7ZkuYNbm3rPx246JPfCQ=">
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_employee" property="employee" z="ffOgqPDiDXN/ejpl7jXoJ+4ofhk="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_year" property="year" z="Ur19mPNwGaILz4wWjiESG/qd0u4="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_month" property="month" z="lSmDiWkZaAiJ2/9gmDoHhpION7w="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_job_role" property="job_role" z="f312jEwD6wH4l/ItbrAXYgFNTX4="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_project" property="project" z="7pVOMQpiMZP+zbnUMlIpkm08D04="/>            
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_workArea" property="workArea" z="s6+1qckv4039BGg7sXGHbJvDw5c="/>
+        </table:table>
+    </page:list>
+</div>

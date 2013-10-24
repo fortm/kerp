@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByEmployee" id="ff_com_kreativ_kerp_domain_EmployeeProjectMap" path="/employeeprojectmaps" z="xWIzjEESlK3bbem1Glqp0IcoDlA=">
+        <field:select disableFormBinding="true" field="employee" id="f_com_kreativ_kerp_domain_EmployeeProjectMap_employee" itemValue="employee_id" items="${employees}" path="/employees" required="true" z="kB6npP4DY1gS6cUoZ5oVOU78I7U="/>
+    </form:find>
+</div>

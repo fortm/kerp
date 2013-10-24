@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_Notifications" items="${notificationses}" z="esCtqvzky+kD3q7XdAWkBMesSXI=">
+        <table:table data="${notificationses}" id="l_com_kreativ_kerp_domain_Notifications" path="/notificationses" z="Q1Aj8GH54UtPlF07+oxdKuvVa98=">
+            <table:column id="c_com_kreativ_kerp_domain_Notifications_employee" property="employee" z="W3k00Q0ES2Wcy5ksS/wqZB7IMBA="/>
+            <table:column id="c_com_kreativ_kerp_domain_Notifications_notified" property="notified" z="MR0MPQEbnsYps1qKcMb/D/8kvPE="/>
+        </table:table>
+    </page:list>
+</div>

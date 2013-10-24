@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport" items="${consolidatedempsalreports}" z="i8HXgXjANkRS0ED/4LKxgF5WDaM=">
+        <table:table data="${consolidatedempsalreports}" delete="false" id="l_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport" path="/consolidatedempsalreports" update="false" z="k/36ZYp8diZrE6P4CF1rRrlUYEY=">
+            <table:column id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_employee" property="employee" z="NneyCOuxMXByJdvdNDPP26QR5xA="/>
+            <table:column id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_year" property="year" z="dBaqad7FhBP2K9PLX7f3Io849YM="/>
+            <table:column id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_month" property="month" z="MHSHFh91XopMCTIcSsSAdutM+/Q="/>
+            <table:column id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_project" property="project" z="Hgpe2Hc7uYI/7qgKY4nhHBbuOPM="/>
+            <table:column id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_role" property="role" z="SySieSLQRH6DQplevwetYEgTAp0="/>
+            <table:column id="c_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_Attendance" property="attendance" z="osuiBgJgmg6la1SWjzichG8anMc="/>
+        </table:table>
+    </page:list>
+</div>

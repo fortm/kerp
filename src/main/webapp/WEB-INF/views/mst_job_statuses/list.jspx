@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_reference_Mst_job_status" items="${mst_job_statuses}" z="sLjFZ11FTIh2d6XA6b2sDVmoxzc=">
+        <table:table data="${mst_job_statuses}" id="l_com_kreativ_kerp_reference_Mst_job_status" path="/mst_job_statuses" z="0iq7ZCzwoQh3kZpYTwsZZDzttY0=">
+            <table:column id="c_com_kreativ_kerp_reference_Mst_job_status_job_status" property="job_status" z="74CPeUwAjGvca/xG//tgo1ed+w4="/>
+        </table:table>
+    </page:list>
+</div>

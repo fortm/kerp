@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kreativ_kerp_payment_ESICTable" object="${esictable}" path="/esictables" z="roEIeCyzILSL/oRXpsdusXHlyBM=">
+        <field:display field="percentage" id="s_com_kreativ_kerp_payment_ESICTable_percentage" object="${esictable}" z="2Y1JTuaUE4HHqVjSu9+iqx1NgrY="/>
+        <field:display field="type" id="s_com_kreativ_kerp_payment_ESICTable_type" object="${esictable}" z="vYQMwm4TXWfl7K9FESJIi67eujM="/>
+    </page:show>
+</div>

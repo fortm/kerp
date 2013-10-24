@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kreativ_kerp_domain_hist_ProjectRoleMapHist" object="${projectrolemaphist}" path="/projectrolemaphists" z="LGEjFT+vb0WFFPSEoN5PwKYmUjY=">
+        <field:display field="project" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_project" object="${projectrolemaphist}" z="hrZeKbg1gqx+FIYy2xDfEekHEOk="/>
+        <field:display field="role" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_role" object="${projectrolemaphist}" z="+1DbwXdPJk67fpXlSBjeKJIa098="/>
+        <field:display field="basic" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_basic" object="${projectrolemaphist}" z="7Vq/TV+9GFzuTYXNHH/mqv01w5g="/>
+        <field:display field="da" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_da" object="${projectrolemaphist}" z="tgfWhCaK/gPx0/wrpWfvM1jBBAw="/>
+        <field:display field="special_allowance" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_special_allowance" object="${projectrolemaphist}" z="qdg3nFyJT7DK28lqJD6iQRYYj40="/>
+        <field:display field="washing_allowance" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_washing_allowance" object="${projectrolemaphist}" z="c4bWTZzKqP2+EzNVQdYmsceOuXU="/>
+        <field:display field="medical_allowance" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_medical_allowance" object="${projectrolemaphist}" z="xLBZQhgXq9gXaT1TO339rHv6EL0="/>
+        <field:display field="educational_allowance" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_educational_allowance" object="${projectrolemaphist}" z="jYiKyCy+hUGUHR3LbLP9Qwfw07M="/>
+        <field:display field="conveyance_allowance" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_conveyance_allowance" object="${projectrolemaphist}" z="640LiEWoOPInxavCinuzOhdlnY0="/>
+        <field:display field="other_allowance" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_other_allowance" object="${projectrolemaphist}" z="YmtCjoeOqVSjs9NTDBDXgMPAniM="/>
+        <field:display field="canteen_allowance" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_canteen_allowance" object="${projectrolemaphist}" z="Cipqhac5wlleiF0gnKrLrjq7gKE="/>
+        <field:display field="ot_rate" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_ot_rate" object="${projectrolemaphist}" z="7C6CGITJ3hbQ87uNj5l8ZjUzdDc="/>
+        <field:display field="ex_gratia" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_ex_gratia" object="${projectrolemaphist}" z="AYzVrw1cShYClJK0qJYM3o8PD84="/>
+        <field:display field="hra_percentage" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_hra_percentage" object="${projectrolemaphist}" z="wcdTXD0HSINDANJ+9B7bARA6jDU="/>
+        <field:display field="service_charges" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_service_charges" object="${projectrolemaphist}" z="lLyTxwvC1QffJ+i8+JkXrWt5FEI="/>
+        <field:display field="bonus_flag" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_bonus_flag" object="${projectrolemaphist}" z="EflGRLSaVgmCaY7CfcUiGiAPbJA="/>
+        <field:display field="LWF" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_LWF" object="${projectrolemaphist}" z="+CiKuu8fzYKIZjTFGpfJanW4dMY="/>
+        <field:display field="sd" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_sd" object="${projectrolemaphist}" z="UhGaAash1baj714n27CCOrd3kzA="/>
+        <field:display field="atm" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_atm" object="${projectrolemaphist}" z="FtNERba8sS0a1uEogv8DJ/U2Od4="/>
+        <field:display date="true" dateTimePattern="${projectRoleMapHist_created_date_format}" field="created" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_created" object="${projectrolemaphist}" z="sxiUNZyWdoffcAQui1vZajwhfSA="/>
+        <field:display date="true" dateTimePattern="${projectRoleMapHist_lastupdated_date_format}" field="lastUpdated" id="s_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_lastUpdated" object="${projectrolemaphist}" z="0FnO204MVlDK5qCjl/jWpDfQtHY="/>
+    </page:show>
+</div>

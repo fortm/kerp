@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_kreativ_kerp_domain_hist_EmployeeHist" modelAttribute="employeeHist" path="/employeehists" render="${empty dependencies}" z="Mys2agPyZJ2AW4Yvxz9JpSGxiJo=">
+        <field:select field="employee" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_employee" itemValue="employee_id" items="${employees}" path="/employees" required="true" z="sy4NnMLFH/7Y+LPf+/ePoJRfGhc="/>        
+        <field:input field="year" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_year" required="true" z="8ad9wnQ6Kg40cETFvGYaLP06LXE="/>
+        <field:select field="month" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_month" items="${monthses}" path="monthses" required="true" z="a9vaE6gmddpRVetI6IxHsLo12Ds="/>
+        <field:select field="job_role" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_job_role" itemValue="id" items="${mst_job_roles}" path="/mst_job_roles" required="true" z="lun0QCIGh/q5nXQFayWkm+LsWdo="/>
+        <field:select field="project" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_project" itemValue="project_id" items="${projects}" path="/projects" required="true" z="qcCM6gUoKb63eRKP3cYWgFMGLG0="/>
+        <field:select field="workArea" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_workArea" items="${workareas}" path="workareas" required="true" z="8t68kaT17j07iIFSv6C4SRSyXRU="/>        
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_kreativ_kerp_domain_hist_EmployeeHist" render="${not empty dependencies}" z="HWZ8fNimzZYJjfTdFj2XCubGtE8="/>
+</div>

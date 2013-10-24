@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kreativ_kerp_reference_Mst_job_status" object="${mst_job_status}" path="/mst_job_statuses" z="X9N+Ep3KHT0nJQs2dkaf2NjajbY=">
+        <field:display field="job_status" id="s_com_kreativ_kerp_reference_Mst_job_status_job_status" object="${mst_job_status}" z="sCO8spgGNOFCOLRd78UIkXXl+AI="/>
+    </page:show>
+</div>

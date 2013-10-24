@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_Project" items="${projects}" z="ncGDxKXsqRCajBMmgkaLakU49MI=">
+        <table:table data="${projects}" delete="false" id="l_com_kreativ_kerp_domain_Project" path="/projects" typeIdFieldName="project_id" z="yUCEsgGyo1fVj1xV33uSkPad+VY=">
+            <table:column id="c_com_kreativ_kerp_domain_Project_project_name" property="project_name" z="+pI0Uev0lxQrA34NifzfmbGgtes="/>
+            <!--table:column id="c_com_kreativ_kerp_domain_Project_supervisor" property="supervisor" z="P2FoNplZLdHPdRamrJN3aAOxlkw="/-->
+            <table:column id="c_com_kreativ_kerp_domain_Project_supervisor" property="supervisor" z="P2FoNplZLdHPdRamrJN3aAOxlkw="/>
+            <table:column date="true" dateTimePattern="${project_start_date_date_format}" id="c_com_kreativ_kerp_domain_Project_start_date" property="start_date" z="uyBJs+thI/dLaRPkH2AwpNLn0AM="/>
+        </table:table>
+    </page:list>
+</div>

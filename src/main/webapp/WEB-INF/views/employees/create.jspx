@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_kreativ_kerp_domain_Employee" modelAttribute="employee" path="/employees" render="${empty dependencies}" z="3Fuf2aNktiOZdHkQhJcG9Vy3oKI=">
+        <!-- field:input field="employee_id" id="c_com_kreativ_kerp_domain_Employee_employee_id" validationMessageCode="field_invalid_integer" z="pXWk7DoTbVeAf0l9oFwhNX+ETqw="/-->
+        <field:input field="first_name" id="c_com_kreativ_kerp_domain_Employee_first_name" required="true" z="L/APnetS7l6UvqKUTJ0vpbBMBno="/>
+        <field:input field="last_name" id="c_com_kreativ_kerp_domain_Employee_last_name" required="true" z="emKEFgsqaeyvWsP50mvMeuzHxPU="/>
+        <field:input field="user_name" id="c_com_kreativ_kerp_domain_Employee_user_name" required="true" z="JjyNJgWlAOi5Fms6TAzVe/pd2vE="/>
+        <field:input field="address_line_1" id="c_com_kreativ_kerp_domain_Employee_address_line_1" z="gWGhmGZxUz83a1ukTktvElbtKmA="/>
+        <field:input field="address_line_2" id="c_com_kreativ_kerp_domain_Employee_address_line_2" z="96h5M8IEqDKFd5gT9tq7KccdYdA="/>
+        <field:input field="city" id="c_com_kreativ_kerp_domain_Employee_city" z="R7YcxvP8GPope4KAT6z4JqrmjUE="/>
+        <field:input field="country" id="c_com_kreativ_kerp_domain_Employee_country" z="VR3wt9u+D/2x+RhSnwTGBhOVbTE="/>
+        <field:select field="gender" id="c_com_kreativ_kerp_domain_Employee_gender" items="${genders}" path="genders" required="true" z="L1ftVkB3+V+q0wW7XsSIacHv4t4="/>
+        <field:datetime dateTimePattern="${employee_joining_date_date_format}" field="joining_date" id="c_com_kreativ_kerp_domain_Employee_joining_date" required="true" z="Tj1rZy1FwiD8wk+tuYUvxWT+acA="/>
+        <field:select field="status" id="c_com_kreativ_kerp_domain_Employee_status" items="${statuses}" path="statuses" required="true" z="mHEhSXjBTd5boV76c/qTeRIedp0="/>
+        <field:input field="email" id="c_com_kreativ_kerp_domain_Employee_email" validationMessageCode="field_invalid_email" z="ysVkLytw8k80hJs+1l/v5h+3D2o="/>
+        <field:select field="mst_job_status" id="c_com_kreativ_kerp_domain_Employee_mst_job_status" itemValue="id" items="${mst_job_statuses}" path="/mst_job_statuses" required="true" z="Z2s8qNFpOhADFipjaiAALZcsuJI="/>
+        <field:select field="mst_job_role" id="c_com_kreativ_kerp_domain_Employee_mst_job_role" itemValue="id" items="${mst_job_roles}" path="/mst_job_roles" required="true" z="SOCPYjJhstINCpjGGMQdkgdrAHA="/>
+        <field:select field="paymentMode" id="c_com_kreativ_kerp_domain_Employee_paymentMode" items="${paymentmodes}" path="paymentmodes" z="DxU5KdjTnFoCk1BajPysZM6n+XI="/>
+        <field:select field="workArea" id="c_com_kreativ_kerp_domain_Employee_workArea" items="${workareas}" path="workareas" required="true" z="v3xxisNaF+ijfy2AAh0X6zLrdG8="/>
+        <field:select field="project" id="c_com_kreativ_kerp_domain_Employee_project" itemValue="project_id" items="${projects}" path="/projects" required="true" z="wSVg1kAWHoKak3k3iBv6QO/V0lA="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_kreativ_kerp_domain_Employee" render="${not empty dependencies}" z="6RSSyJhELtVFUOjNga344PwunOI="/>
+</div>

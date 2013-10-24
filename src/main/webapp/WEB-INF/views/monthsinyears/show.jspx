@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kreativ_kerp_domain_MonthsInYear" object="${monthsinyear}" path="/monthsinyears" z="VYvNmvfffnQ0Mg3c9UlJAgFWssw=">
+        <field:display date="true" dateTimePattern="${monthsInYear_from_date_date_format}" field="from_date" id="s_com_kreativ_kerp_domain_MonthsInYear_from_date" object="${monthsinyear}" z="LhCY7bd0KEjcQbBi0vV5hfU6s/k="/>
+        <field:display date="true" dateTimePattern="${monthsInYear_to_date_date_format}" field="to_date" id="s_com_kreativ_kerp_domain_MonthsInYear_to_date" object="${monthsinyear}" z="SaYzORkrypdHazZS6j7g/7V9WD0="/>
+        <field:display field="year" id="s_com_kreativ_kerp_domain_MonthsInYear_year" object="${monthsinyear}" z="pBi6MfhL85a2TsXtVH3j4jiOlW4="/>
+        <field:display field="months" id="s_com_kreativ_kerp_domain_MonthsInYear_months" object="${monthsinyear}" z="PXriektZ7OMmtibZTpGc9Z49NMk="/>
+        <field:display date="true" dateTimePattern="${monthsInYear_from_salary_month_date_format}" field="from_salary_month" id="s_com_kreativ_kerp_domain_MonthsInYear_from_salary_month" object="${monthsinyear}" z="ELSpAcUIc/fk9Bb3fgATO4Hi0Ts="/>
+        <field:display date="true" dateTimePattern="${monthsInYear_to_salary_month_date_format}" field="to_salary_month" id="s_com_kreativ_kerp_domain_MonthsInYear_to_salary_month" object="${monthsinyear}" z="kaDeuQ0fm4OTFUJS2lPfLj9vEso="/>
+    </page:show>
+</div>

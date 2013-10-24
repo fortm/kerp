@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show delete="false" id="ps_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport" object="${consolidatedempsalreport}" path="/consolidatedempsalreports" update="false" z="IpD/4xAE+G0xDxFxW7jObapw/jQ=">
+        <field:display field="employee" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_employee" object="${consolidatedempsalreport}" z="Hl933LuL+zqrxm+ydkyXnQfM1BM="/>
+        <field:display field="year" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_year" object="${consolidatedempsalreport}" z="aOlwdThWkPHMeLyRFBW4hW9XwCw="/>
+        <field:display field="month" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_month" object="${consolidatedempsalreport}" z="Lwgm3VfRgI1gEUa4ghrcrJRcyCk="/>
+        <field:display field="project" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_project" object="${consolidatedempsalreport}" z="PnX+uH97e52q58tUjmvxQ0pWFTg="/>
+        <field:display field="role" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_role" object="${consolidatedempsalreport}" z="z//Dpx4nM4XV6x6FLlP4gYixc7E="/>
+        <field:display field="attendance" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_Attendance" object="${consolidatedempsalreport}" z="rrssqG5j0/ANFiy7vg84CRaRUu4="/>
+        <field:display field="basic" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_basic" object="${consolidatedempsalreport}" z="lcxVLCX70a07AGj/hnddqyMevpk="/>
+        <field:display field="da" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_da" object="${consolidatedempsalreport}" z="KgRbftaEWfkjt87x/m1VIV7LIK0="/>
+        <field:display field="special_allowance" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_special_allowance" object="${consolidatedempsalreport}" z="P/SaH1aU8EVtAPpHAaZ9tA4RPlk="/>
+        <field:display field="washing_allowance" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_washing_allowance" object="${consolidatedempsalreport}" z="uiD4D1hy7SQn9jB8Npr72rNHLMk="/>
+        <field:display field="medical_allowance" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_medical_allowance" object="${consolidatedempsalreport}" z="jXvNKwNOmqI+90AIA+ku8n+icAU="/>
+        <field:display field="educational_allowance" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_educational_allowance" object="${consolidatedempsalreport}" z="aDxS1wHSIKuvYrLsLwT/16NcVlc="/>
+        <field:display field="conveyance_allowance" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_conveyance_allowance" object="${consolidatedempsalreport}" z="oTek3qR/Q1vydFspwItiY13qbeo="/>
+        <field:display field="other_allowance" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_other_allowance" object="${consolidatedempsalreport}" z="nsXuZygfYH+sf73QnnGPV1dbkdk="/>
+        <field:display field="ot_rate" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_ot_rate" object="${consolidatedempsalreport}" z="9KlEeK4uUEbD9+4Ek7ZxJBJ2Bgo="/>
+        <field:display field="ex_gratia" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_ex_gratia" object="${consolidatedempsalreport}" z="YC83CsoW8w1tqofpwwbHI1LeuAA="/>
+        <field:display field="hra_percentage" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_hra_percentage" object="${consolidatedempsalreport}" z="FfMF3ngDiKCFk8+RCZ5wRbvSMRY="/>
+        <field:display field="service_charges" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_service_charges" object="${consolidatedempsalreport}" z="obbCx8Tf+3iGIYBYeTRQKtocRRo="/>
+        <field:display field="bonus_flag" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_bonus_flag" object="${consolidatedempsalreport}" z="jFjBTKNsOD1LhqmrSHV3vU0sNKM="/>
+        <field:display field="canteen_allowance" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_canteen_allowance" object="${consolidatedempsalreport}" z="Diy8TnBiIL18qZbeogwxCEjFcf0="/>
+        <field:display field="ot_days" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_ot_days" object="${consolidatedempsalreport}" z="H3R0AintKyI0fIl/U++889OL4cU="/>
+        <field:display field="ot" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_ot" object="${consolidatedempsalreport}" z="AYIRdbpghtOQQ22CoS2+Yk0rJb0="/>
+        <field:display field="gross_salary" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_gross_salary" object="${consolidatedempsalreport}" z="PXVY0ojRbcRyR65exyPbm9jWyAQ="/>
+        <field:display field="hra" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_hra" object="${consolidatedempsalreport}" z="okkek/siZOLt6tWyIckbpyxPldE="/>
+        <field:display field="gross_Earnings" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_gross_Earnings" object="${consolidatedempsalreport}" z="n/BmclZysaNRMJGeGX+YpTcAZcw="/>
+        <field:display field="WC" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_WC" object="${consolidatedempsalreport}" z="j1K+z4UWM3TvvAHyoL78PSeHTUA="/>
+        <field:display field="pf" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_pf" object="${consolidatedempsalreport}" z="yPUVSgWhPWKQld5a7qE3l741mkY="/>
+        <field:display field="esic" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_esic" object="${consolidatedempsalreport}" z="5c+E6OJdJINBAODLnx79+7JScWg="/>
+        <field:display field="professional_tax" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_professional_tax" object="${consolidatedempsalreport}" z="us4uHMLgwGCUTrMhWXlQoupC9KI="/>
+        <field:display field="LWF" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_LWF" object="${consolidatedempsalreport}" z="VQaK9DKej2YK6q9bpexfok3rbxs="/>
+        <field:display field="sd" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_sd" object="${consolidatedempsalreport}" z="/w8+8f7Z76rB+FP5MAiJ+lPu7Kc="/>
+        <field:display field="atm" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_atm" object="${consolidatedempsalreport}" z="weFO4WksBlCu7AQrpKge6Jw+Ut8="/>
+        <field:display field="total_deductions" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_total_deductions" object="${consolidatedempsalreport}" z="UpNHCLpJvAcW0DxpmhqtzwCFWxc="/>
+        <field:display field="net_payment" id="s_com_kreativ_kerp_domain_reports_ConsolidatedEmpSalReport_net_payment" object="${consolidatedempsalreport}" z="/uvsc9XQteY5kdMq46AV1ODCDhQ="/>
+    </page:show>
+</div>

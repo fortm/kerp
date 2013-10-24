@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_Supervisor" items="${supervisors}" z="CdmpUQxzDmejf91X/zQXP7Vw+EU=">
+        <table:table data="${supervisors}" id="l_com_kreativ_kerp_domain_Supervisor" path="/supervisors" z="M6SDU7flEefW8bgJz4qxGWdIMfU=">
+            
+            
+        
+        
+        </table:table>
+    </page:list>
+</div>

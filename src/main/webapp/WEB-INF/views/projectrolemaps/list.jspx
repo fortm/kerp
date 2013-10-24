@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_ProjectRoleMap" items="${projectrolemaps}" z="jl0ZEEFypOwwvX60Z1gH3fVHP5E=">
+        <table:table data="${projectrolemaps}" id="l_com_kreativ_kerp_domain_ProjectRoleMap" path="/projectrolemaps" z="fqhQVGe0gxhpcNyIWopMAEYgV1Y=">
+            <table:column id="c_com_kreativ_kerp_domain_ProjectRoleMap_project" property="project" z="azFa4Ydv/vViZ6ed4hGJ4RaqmdI="/>
+            <table:column id="c_com_kreativ_kerp_domain_ProjectRoleMap_role" property="role" z="PIj87MfzK5pmAplINTOGVZ56uYc="/>
+            <table:column id="c_com_kreativ_kerp_domain_ProjectRoleMap_basic" property="basic" z="v33DzeaSroAEHqwLEtoL1vIyg18="/>
+            <table:column id="c_com_kreativ_kerp_domain_ProjectRoleMap_da" property="da" z="5WUPR+copH1w2X/fL9b5gO4J3vI="/>
+            <table:column id="c_com_kreativ_kerp_domain_ProjectRoleMap_special_allowance" property="special_allowance" z="bPWb735qmgYfDym9rH9QlP1FD7M="/>
+            <table:column id="c_com_kreativ_kerp_domain_ProjectRoleMap_washing_allowance" property="washing_allowance" z="09jePIgZusxPTzsmc0ER+Zt/FSo="/>
+        </table:table>
+    </page:list>
+</div>

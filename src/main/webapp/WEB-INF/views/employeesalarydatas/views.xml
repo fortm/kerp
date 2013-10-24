@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="employeesalarydatas/list">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/list.jspx"/>
+    </definition>
+<definition extends="default" name="employeesalarydatas/show">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/show.jspx"/>
+    </definition>
+<definition extends="default" name="employeesalarydatas/createMessage1">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/createMessage1.jspx"/>
+    </definition> 
+<definition extends="default" name="employeesalarydatas/createMessage2">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/createMessage2.jspx"/>
+    </definition>     
+<definition extends="default" name="employeesalarydatas/createMessage3">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/createMessage3.jspx"/>
+    </definition>     
+<definition extends="default" name="employeesalarydatas/createMessage4">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/createMessage4.jspx"/>
+    </definition>
+<definition extends="default" name="employeesalarydatas/createMessage5">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/createMessage5.jspx"/>
+    </definition>     
+<definition extends="default" name="employeesalarydatas/createMessage6">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/createMessage6.jspx"/>
+    </definition>            
+<definition extends="default" name="employeesalarydatas/showMessage">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/showMessage.jspx"/>
+    </definition>    
+<definition extends="default" name="employeesalarydatas/create">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/create.jspx"/>
+    </definition>
+<definition extends="default" name="employeesalarydatas/update">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/update.jspx"/>
+    </definition>
+<definition extends="default" name="employeesalarydatas/employeesalarydatareport">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/employeesalarydatareport.jspx"/>
+    </definition>
+<definition extends="default" name="employeesalarydatas/findEmployeeSalaryDatasById">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/findEmployeeSalaryDatasById.jspx"/>
+    </definition>
+<definition extends="default" name="employeesalarydatas/findEmployeeSalaryDatasByEmployee">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/findEmployeeSalaryDatasByEmployee.jspx"/>
+    </definition>
+<definition extends="default" name="employeesalarydatas/findEmployeeSalaryDatasByEmployeeAndYearAndMonth">
+        <put-attribute name="body" value="/WEB-INF/views/employeesalarydatas/findEmployeeSalaryDatasByEmployeeAndYearAndMonth.jspx"/>
+    </definition>
+</tiles-definitions>

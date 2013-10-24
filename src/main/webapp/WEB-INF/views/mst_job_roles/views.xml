@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="mst_job_roles/list">
+        <put-attribute name="body" value="/WEB-INF/views/mst_job_roles/list.jspx"/>
+    </definition>
+<definition extends="default" name="mst_job_roles/show">
+        <put-attribute name="body" value="/WEB-INF/views/mst_job_roles/show.jspx"/>
+    </definition>
+<definition extends="default" name="mst_job_roles/create">
+        <put-attribute name="body" value="/WEB-INF/views/mst_job_roles/create.jspx"/>
+    </definition>
+<definition extends="default" name="mst_job_roles/createMessage">
+        <put-attribute name="body" value="/WEB-INF/views/mst_job_roles/createMessage.jspx"/>
+    </definition>    
+<definition extends="default" name="mst_job_roles/update">
+        <put-attribute name="body" value="/WEB-INF/views/mst_job_roles/update.jspx"/>
+    </definition>
+<definition extends="default" name="mst_job_roles/findMst_job_rolesByJob_roleEquals">
+        <put-attribute name="body" value="/WEB-INF/views/mst_job_roles/findMst_job_rolesByJob_roleEquals.jspx"/>
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_payment_WCTable" items="${wctables}" z="Gun6sKASPJr3Q6TMgB3p1jJMyTI=">
+        <table:table data="${wctables}" id="l_com_kreativ_kerp_payment_WCTable" path="/wctables" z="N20DoTISdzm4h3N4aYAxTgyHmQI=">
+            <table:column id="c_com_kreativ_kerp_payment_WCTable_percentage" property="percentage" z="NQjZ57C29hCSZ/SfCAXkvMtb1kI="/>
+        </table:table>
+    </page:list>
+</div>

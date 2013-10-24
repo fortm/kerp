@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByEmployeeAndDateEquals" id="ff_com_kreativ_kerp_time_Timesheet" path="/timesheets" z="+1cEuuW7h/5MEXfNOEoZV7QjQZg=">
+        <field:select disableFormBinding="true" field="employee" id="f_com_kreativ_kerp_time_Timesheet_employee" itemValue="employee_id" items="${employees}" path="/employees" required="true" z="NsRRoALsP8Y4H59i5ZYmrmadpks="/>
+        <field:datetime dateTimePattern="${timesheet_date_date_format}" disableFormBinding="true" field="date" id="f_com_kreativ_kerp_time_Timesheet_date" required="true" z="vA+D10uX5JDQiNB9d17W8UYIaPc="/>
+    </form:find>
+</div>

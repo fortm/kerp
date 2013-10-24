@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="employeeprojectmaps/list">
+        <put-attribute name="body" value="/WEB-INF/views/employeeprojectmaps/list.jspx"/>
+    </definition>
+<definition extends="default" name="employeeprojectmaps/show">
+        <put-attribute name="body" value="/WEB-INF/views/employeeprojectmaps/show.jspx"/>
+    </definition>
+<definition extends="default" name="employeeprojectmaps/create">
+        <put-attribute name="body" value="/WEB-INF/views/employeeprojectmaps/create.jspx"/>
+    </definition>
+<definition extends="default" name="employeeprojectmaps/update">
+        <put-attribute name="body" value="/WEB-INF/views/employeeprojectmaps/update.jspx"/>
+    </definition>
+<definition extends="default" name="employeeprojectmaps/findEmployeeProjectMapsByEmployee">
+        <put-attribute name="body" value="/WEB-INF/views/employeeprojectmaps/findEmployeeProjectMapsByEmployee.jspx"/>
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_kreativ_kerp_domain_ProjectRoleMap" modelAttribute="projectRoleMap" path="/projectrolemaps" versionField="Version" z="hn8G/xEydcOpW6CW0kVSuVVshUU=">
+        <field:select field="project" id="c_com_kreativ_kerp_domain_ProjectRoleMap_project" itemValue="project_id" items="${projects}" path="/projects" required="true" z="60BxBjyggaAuGgP/cTRIujz16JE="/>
+        <field:select field="role" id="c_com_kreativ_kerp_domain_ProjectRoleMap_role" itemValue="id" items="${mst_job_roles}" path="/mst_job_roles" required="true" z="x1bNAtNYsOLcc70aY+l9/YImYU4="/>
+        <field:input field="basic" id="c_com_kreativ_kerp_domain_ProjectRoleMap_basic" required="true" z="bQIEuhdFfXNyarctIbLM0ZG0buA="/>
+        <field:input field="da" id="c_com_kreativ_kerp_domain_ProjectRoleMap_da" required="true" z="A7EfBHivJbIoeTEOe+KqyfEi7lE="/>
+        <field:input field="special_allowance" id="c_com_kreativ_kerp_domain_ProjectRoleMap_special_allowance" required="true" z="gMJK2hUStSs61+hRSuUL5mvWHaA="/>
+        <field:input field="washing_allowance" id="c_com_kreativ_kerp_domain_ProjectRoleMap_washing_allowance" required="true" z="zwNm734pwhfAzlUDDeBwkciKOok="/>
+        <field:input field="medical_allowance" id="c_com_kreativ_kerp_domain_ProjectRoleMap_medical_allowance" required="true" z="iVn6aCYmJdft+tAdshRhi4H/Hoc="/>
+        <field:input field="conveyance_allowance" id="c_com_kreativ_kerp_domain_ProjectRoleMap_conveyance_allowance" required="true" z="Q42QfdAEG3OyLqAAb02rRZizSc8="/>
+        <field:input field="other_allowance" id="c_com_kreativ_kerp_domain_ProjectRoleMap_other_allowance" required="true" z="5x+E4N4SR3wNsdhLsrK/mog/Kn8="/>
+        <field:input field="ot_rate" id="c_com_kreativ_kerp_domain_ProjectRoleMap_ot_rate" required="true" z="yXGplCm9xZjHRJ8idl+JwQt/N1w="/>
+        <field:input field="ex_gratia" id="c_com_kreativ_kerp_domain_ProjectRoleMap_ex_gratia" required="true" z="6CG8tZ5+wzl08x7c/Ls8ybTkuR4="/>
+        <field:input field="hra_percentage" id="c_com_kreativ_kerp_domain_ProjectRoleMap_hra_percentage" required="true" z="wKco/7H81EMHt+lpT2oPna618uI="/>
+        <field:input field="service_charges" id="c_com_kreativ_kerp_domain_ProjectRoleMap_service_charges" required="true" z="hxiW3OXlUS4ju2z4cFeDSgAvAcU="/>
+        <field:checkbox field="bonus_flag" id="c_com_kreativ_kerp_domain_ProjectRoleMap_bonus_flag" z="V+mHzuMD1dUhppnbzSVSqw2bF/I="/>
+        <field:input field="educational_allowance" id="c_com_kreativ_kerp_domain_ProjectRoleMap_educational_allowance" required="true" z="bGB2drEdVcVPEByo+FOAEyhW9hc="/>
+        <field:input field="canteen_allowance" id="c_com_kreativ_kerp_domain_ProjectRoleMap_canteen_allowance" required="true" z="RQdIvMXjCsyC/hRkwv8bgJ8pk5w="/>
+        <field:input field="LWF" id="c_com_kreativ_kerp_domain_ProjectRoleMap_LWF" required="true" z="epzs7x06OzcKczZ7plJO2h4IKpU="/>
+        <field:input field="sd" id="c_com_kreativ_kerp_domain_ProjectRoleMap_sd" required="true" z="/L6c+i0ZkbXm0zsG5PTMb/Lv3c4="/>
+        <field:input field="atm" id="c_com_kreativ_kerp_domain_ProjectRoleMap_atm" required="true" z="ZgJ/Q88k8Vi7PVdJmYTKNL/nFq8="/>
+    </form:update>
+</div>

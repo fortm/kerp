@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_payment_PFTable" items="${pftables}" z="3o4APhKigQXe3k0+jTQWaqn6YpA=">
+        <table:table data="${pftables}" id="l_com_kreativ_kerp_payment_PFTable" path="/pftables" z="U2/5ZgMlXjl7d6t7bYGrkFHqS5c=">
+            <table:column id="c_com_kreativ_kerp_payment_PFTable_percentage" property="percentage" z="Cq9Hs1dSm20KoP4xu1wcXw43Gs8="/>
+            <table:column id="c_com_kreativ_kerp_payment_PFTable_type" property="type" z="+LArZpugWwyRJi5aC9PwgMHM6M8="/>
+        </table:table>
+    </page:list>
+</div>

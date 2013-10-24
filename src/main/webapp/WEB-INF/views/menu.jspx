@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" xmlns:sec="http://www.springframework.org/security/tags" id="menu" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <sec:authorize ifAllGranted="ROLE_USER">
+            <menu:category id="c_employee" z="sxLyQbJ/qSw9Reoi1NHvJhkZ/rU=">
+                <menu:item id="i_employee_new" messageCode="global_menu_new" url="/employees?form" z="+S/pgOAdANt9JPGnS20kM8qTu00="/>
+                <!--menu:item id="i_employee_list" messageCode="global_menu_list" url="/employees?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="YzmRBI+yzLifxZxrpgFQqxwsG0g="/-->
+                <menu:item id="fi_employee_employee_id" messageCode="global_menu_find" url="/employees?find=ByEmployee_id&amp;form" z="fY9eGhNstIENF+iV6fmndMaQbDQ="/>
+                <!--menu:item id="i_employee_list" messageCode="global_menu_list" url="/employees?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="YzmRBI+yzLifxZxrpgFQqxwsG0g="/-->
+                <!-- menu:item id="i_employee_list" messageCode="global_menu_list" url="/employees?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="YzmRBI+yzLifxZxrpgFQqxwsG0g="/-->
+                <menu:item id="i_employee_list" messageCode="global_menu_list" url="/employees?page=1&amp;size=${empty param.size ? 10 : param.size}" z="IfTXfF5mBLDCW+DUkfuN3Wgvias="/>
+                <menu:item id="fi_employee_mst_job_role" messageCode="global_menu_find" render="false" url="/employees?find=ByMst_job_role&amp;form" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_employeehist" z="hM61YY2lKNW6TA4Iv6pwHaRmXTE=">
+                <!--menu:item id="i_employeehist_list" messageCode="global_menu_list" url="/employeehists?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="V09hHLzZrhEEw+k+HE48J8H31Gw="/-->
+                <!-- menu:item id="i_employeehist_list" messageCode="global_menu_list" url="/employeehists?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="V09hHLzZrhEEw+k+HE48J8H31Gw="/-->
+                <!--menu:item id="i_employeehist_new" messageCode="global_menu_new" url="/employeehists?form" z="E6KDMReqgt4W9RZGttxj+pgjVTI="/-->
+                <menu:item id="fi_employeehist_employee" messageCode="global_menu_find" url="/employeehists?find=ByEmployee&amp;form" z="Zqlg9RjJAH7m56BSs4VuPuQQUHw="/>
+                <menu:item id="fi_employeehist_employee_id" messageCode="global_menu_find" render="false" url="/employeehists?find=ByEmployee_id&amp;form" z="user-managed"/>
+                <menu:item id="i_employeehist_list" messageCode="global_menu_list" url="/employeehists?page=1&amp;size=${empty param.size ? 10 : param.size}" z="27opkiqr5+bwFOrRzRKcYrMt8Pg="/>
+                <menu:item id="i_employeehist_new" messageCode="global_menu_new" url="/employeehists?form" z="E6KDMReqgt4W9RZGttxj+pgjVTI="/>
+            </menu:category>
+            <menu:category id="c_timesheet" z="vZI2UhVwD6iy95OWru6nPzmPey4=">
+                <menu:item id="i_timesheet_new" messageCode="global_menu_new" url="/timesheets?form" z="FRFugRV3ynPs4g9usYNJ8Ign5FQ="/>
+                <menu:item id="i_timesheet_list" messageCode="global_menu_list" url="/timesheets?page=1&amp;size=${empty param.size ? 10 : param.size}" z="yvaVGDSLUR1I4Lzn8GZPfdZADo4="/>
+                <menu:item id="fi_timesheet_employee" messageCode="global_menu_find" url="/timesheets?find=ByEmployee&amp;form" z="IhBWWN7dnaMXp97fAeb/5L0eaVw="/>
+                <menu:item id="fi_timesheet_employeeanddateequals" messageCode="global_menu_find" url="/timesheets?find=ByEmployeeAndDateEquals&amp;form" z="8PXhEbcx7vCNC6K1sH4LuO5KHdY="/>
+            </menu:category>
+            <menu:category id="c_employeebankdetails" z="t9bcLj1UALiKXgqPyuTr1Dg1+d8=">
+                <menu:item id="i_employeebankdetails_new" messageCode="global_menu_new" url="/employeebankdetailses?form" z="SqAom/Mn/Idib0hXjpCT2uuymSs="/>
+                <menu:item id="i_employeebankdetails_list" messageCode="global_menu_list" url="/employeebankdetailses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="QDfLnrqzzidQFvRwaiwgi1/iaeI="/>
+                <menu:item id="fi_employeebankdetails_id" messageCode="global_menu_find" url="/employeebankdetailses?find=ById&amp;form" z="GAcu/Dtl92JcJXDvQ4B+YF+pLGs="/>
+            </menu:category>
+            <menu:category id="c_project" z="u0PzRIwMDmEv/J6b8vbKakXGIdQ=">
+                <menu:item id="i_project_new" messageCode="global_menu_new" url="/projects?form" z="1BazRC1rLnod0a+MpP1flWTvehA="/>
+                <menu:item id="i_project_list" messageCode="global_menu_list" url="/projects?page=1&amp;size=${empty param.size ? 10 : param.size}" z="GHL05c3Rvr+eKDgRCk3Ttak0W+g="/>
+                <menu:item id="i_projectrolemap_new" messageCode="global_menu_new" url="/projectrolemaps?form" z="+sdPtgpJamOI5DgvTXd4+HTIhW0="/>
+                <menu:item id="i_projectrolemap_list" messageCode="global_menu_list" url="/projectrolemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="vPQkzqwYXpCp9sCfqoa1tUFSgvE="/>
+                <menu:item id="fi_project_project_nameequals" messageCode="global_menu_find" render="false" url="/projects?find=ByProject_nameEquals&amp;form" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_employeeprojectmap" render="false" z="user-managed">
+                <menu:item id="i_employeeprojectmap_new" messageCode="global_menu_assign" render="false" url="/employeeprojectmaps?form" z="user-managed"/>
+                <menu:item id="i_employeeprojectmap_list" messageCode="global_menu_list" render="false" url="/employeeprojectmaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
+                <menu:item id="fi_employeeprojectmap_employee" messageCode="global_menu_find" render="false" url="/employeeprojectmaps?find=ByEmployee&amp;form" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_projectrolemap" render="false" z="user-managed">
+                <menu:item id="fi_projectrolemap_projectandrole" messageCode="global_menu_find" render="false" url="/projectrolemaps?find=ByProjectAndRole&amp;form" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_projectrolemaphist" z="USBu8IMBsijzitRt+GVO/m8tLuU=">
+                <menu:item id="i_projectrolemaphist_new" messageCode="global_menu_new" render="false" url="/projectrolemaphists?form" z="user-managed"/>
+                <menu:item id="i_projectrolemaphist_list" messageCode="global_menu_list" url="/projectrolemaphists?page=1&amp;size=${empty param.size ? 10 : param.size}" z="X2lzIV8sNqUsSWUp9iZcAzsNQQk="/>
+            </menu:category>
+            <menu:category id="c_employeesalarydata" z="7uIvQAcjZHF/v/zVvnxbCQCW4ww=">
+                <menu:item id="i_employeesalarydata_new" messageCode="global_menu_new" url="/employeesalarydatas?form" z="j39TY7LbvPFJLdvdwXo58GPcHJM="/>
+                <menu:item id="i_employeesalarydata_list" messageCode="global_menu_list" url="/employeesalarydatas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="IbVIyy3Co4DGTwfEQr/xhVdKzZw="/>
+                <menu:item id="i_employeesalarydata_employeesalarydatareport_report" messageCode="menu_employeesalarydata_employeesalarydatareport_report" url="/employeesalarydatas/reports/employeesalarydatareport?form" z="NnR9/vZ0ud5WapP3rIcdfhlmT1I="/>
+                <menu:item id="fi_employeesalarydata_id" messageCode="global_menu_find" render="false" url="/employeesalarydatas?find=ById&amp;form" z="user-managed"/>
+                <menu:item id="fi_employeesalarydata_employee" messageCode="global_menu_find" url="/employeesalarydatas?find=ByEmployee&amp;form" z="TceDvXq9nTfigAltEQzEfp+0atc="/>
+                <menu:item id="fi_employeesalarydata_employeeandyearandmonth" messageCode="global_menu_find" render="false" url="/employeesalarydatas?find=ByEmployeeAndYearAndMonth&amp;form" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_flows" render="false" z="user-managed">
+                <menu:item id="i_flows_assignproject" messageCode="webflow_menu_enter" render="false" url="/AssignProject" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_employeeprojectmaphist" render="false" z="user-managed">
+                <menu:item id="i_employeeprojectmaphist_new" messageCode="global_menu_new" render="false" url="/employeeprojectmaphists?form" z="user-managed"/>
+                <menu:item id="i_employeeprojectmaphist_list" messageCode="global_menu_list" render="false" url="/employeeprojectmaphists?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_controller" render="false" z="user-managed">
+                <menu:item id="i_controller__consolidatedpermanentemployeereportindex_id" messageCode="global_generic" url="/consolidatedpermanentemployeereport/index" z="+jKZN3bpUVZV5368iFqLENKHqDg="/>
+            </menu:category>
+            <menu:category id="c_consolidatedempsalreport" render="false" z="user-managed">
+                <menu:item id="i_consolidatedempsalreport_new" messageCode="global_menu_new" url="/consolidatedempsalreports?form" z="5wvWpHkgtPd6BqfSiFQUhSjE78I="/>
+                <menu:item id="i_consolidatedempsalreport_list" messageCode="global_menu_list" url="/consolidatedempsalreports?page=1&amp;size=${empty param.size ? 10 : param.size}" z="I0/0HI8Qb9i+lGHnhev61zyUIgU="/>
+            </menu:category>
+            <menu:category id="c_reports" z="EKjU7oPDakGZYfpgZCs8xkOEqak=">
+                <menu:item id="i_reports_new" messageCode="global_menu_new" url="/reportses?form" z="HoZ23XdthWe/OeDaDHzWwVsZBtA="/>
+                <menu:item id="i_reports_list" messageCode="global_menu_list" url="/reportses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="NPIC9Rp75TMjJV0S2+mTKL234CA="/>
+                <menu:item id="i_financialyearreport_new" messageCode="global_menu_new" url="/financialyearreports?form" z="lm+3SLfVgKKPIk4NgaTsZ47G3FU="/>
+                <menu:item id="i_financialyearreport_list" messageCode="global_menu_list" url="/financialyearreports?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YY79TXnis/60OrVrTh0BTu/5axo="/>
+                <menu:item id="i_individualreport_new" messageCode="global_menu_new" url="/individualreports?form" z="Dyvk6RAILi5oeaQT1tKjixjjZN0="/>
+                <menu:item id="i_individualreport_list" messageCode="global_menu_list" url="/individualreports?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DZFV+OOBRRRZCxC6giNMUiUeNWU="/>
+                <menu:item id="i_individualfinancialreport_new" messageCode="global_menu_new" url="/individualfinancialreports?form" z="U8QcoajbYpHg8FtX+7V9gKFgeCw="/>
+                <menu:item id="i_individualfinancialreport_list" messageCode="global_menu_list" url="/individualfinancialreports?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Ws8TQN0q5BfHpwyJE9ideNOWAP0="/>
+            </menu:category>
+            <menu:category id="c_turbotimesheet" z="lg5SdkDXofkMVAX9ODMlJGh5t58=">
+                <menu:item id="i_turbotimesheet_new" messageCode="global_menu_new" url="/turbotimesheets?form" z="WJI7jvuoEhVkpTRaP9wrVgA9L5M="/>
+                <menu:item id="i_turbotimesheet_list" messageCode="global_menu_list" render="false" url="/turbotimesheets?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
+            </menu:category>
+        </sec:authorize>
+        <sec:authorize ifAllGranted="ROLE_ADMIN">
+            <menu:category id="c_mst_job_status" z="NgraFyfy9bVU+vTq04xqFoLyNbQ=">
+                <menu:item id="i_mst_job_status_new" messageCode="global_menu_new" url="/mst_job_statuses?form" z="JtSHMnLUFdUkLN6W/L+GBHaYHLM="/>
+                <menu:item id="i_mst_job_status_list" messageCode="global_menu_list" url="/mst_job_statuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="u3gX8z9KmxpjdsBTtOp2IQ/KG2s="/>
+                <!--menu:item id="fi_mst_job_status_job_statusequals" messageCode="global_menu_find" url="/mst_job_statuses?find=ByJob_statusEquals&amp;form" z="2YMGso62tBbLynRcUNbmP7xfQBA="/-->
+                <menu:item id="fi_mst_job_status_job_statusequals" messageCode="global_menu_find" render="false" url="/mst_job_statuses?find=ByJob_statusEquals&amp;form" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_mst_job_role" z="htl1InZhvGSo1zSe1xeXIAcDoys=">
+                <menu:item id="i_mst_job_role_new" messageCode="global_menu_new" url="/mst_job_roles?form" z="VcohaeMt6kLQLmpymas5XC7d1ks="/>
+                <menu:item id="i_mst_job_role_list" messageCode="global_menu_list" url="/mst_job_roles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="JlbATRcNBmfS7sASU/T1zWgqmW8="/>
+                <!--menu:item id="fi_mst_job_role_job_roleequals" messageCode="global_menu_find" url="/mst_job_roles?find=ByJob_roleEquals&amp;form" z="y9qgaAJdnabFraqdVZAPXigL29A="/-->
+                <!-- menu:item id="fi_mst_job_role_job_roleequals" messageCode="global_menu_find" url="/mst_job_roles?find=ByJob_roleEquals&amp;form" z="y9qgaAJdnabFraqdVZAPXigL29A="/-->
+                <menu:item id="fi_mst_job_role_job_roleequals" messageCode="global_menu_find" render="false" url="/mst_job_roles?find=ByJob_roleEquals&amp;form" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_monthsinyear" z="kP07XiIMiR8O84U51JK9emgS9Yc=">
+                <menu:item id="i_monthsinyear_new" messageCode="global_menu_new" url="/monthsinyears?form" z="zywVb+f5Plmhu7qzqh6sg2gNp7c="/>
+                <menu:item id="i_monthsinyear_list" messageCode="global_menu_list" url="/monthsinyears?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/9t1ULyl8tVUwKfhqa/TRTmJdCw="/>
+            </menu:category>
+            <menu:category id="c_pftable" z="SuQLiTXujR7j1TEf6LbtyXNndyU=">
+                <menu:item id="i_pftable_new" messageCode="global_menu_new" url="/pftables?form" z="8kM6aIFi9tIV1W8f112ChGYmcQE="/>
+                <menu:item id="i_pftable_list" messageCode="global_menu_list" url="/pftables?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Hsw+b20NfS7cPO3Lmye69dENSZM="/>
+                <menu:item id="fi_pftable_typeequals" messageCode="global_menu_find" render="false" url="/pftables?find=ByTypeEquals&amp;form" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_wctable" z="mOsHHQ37KN9+BsX/tcfGkN/oOsA=">
+                <menu:item id="i_wctable_new" messageCode="global_menu_new" url="/wctables?form" z="N1DR61EKah7ELQNgEJUyOPN4SBA="/>
+                <menu:item id="i_wctable_list" messageCode="global_menu_list" url="/wctables?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lTceQ+1f5tlXbflBalzLZ2OTceE="/>
+            </menu:category>
+            <menu:category id="c_esictable" z="wlaSZh2iJ4/G4/1lnjg0kjWyOPg=">
+                <menu:item id="i_esictable_new" messageCode="global_menu_new" url="/esictables?form" z="MF//oZQtejcyEhx5+O0/GDo+odk="/>
+                <menu:item id="i_esictable_list" messageCode="global_menu_list" url="/esictables?page=1&amp;size=${empty param.size ? 10 : param.size}" z="jinomwtmqr6sSkVM7ySqpQ0aZQc="/>
+                <menu:item id="fi_esictable_typeequals" messageCode="global_menu_find" render="false" url="/esictables?find=ByTypeEquals&amp;form" z="user-managed"/>
+            </menu:category>
+            <menu:category id="c_proftaxtable" z="Xf84STbCK4ViNxqsun5GVVgugw4=">
+                <menu:item id="i_proftaxtable_new" messageCode="global_menu_new" url="/proftaxtables?form" z="OSU0NGVrEAzALI5QgzZ0oZFTGDU="/>
+                <menu:item id="i_proftaxtable_list" messageCode="global_menu_list" url="/proftaxtables?page=1&amp;size=${empty param.size ? 10 : param.size}" z="3j7ULzKtcAufJOs4Bf29YnjNcfY="/>
+            </menu:category>
+            <menu:category id="c_notifications" z="7z85+gi+Bdk2CTHIKjg0J9vtruo=">
+                <menu:item id="i_notifications_new" messageCode="global_menu_new" render="false" url="/notificationses?form" z="user-managed"/>
+                <menu:item id="i_notifications_list" messageCode="global_menu_list" url="/notificationses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="HivKtQ3a9oY6T+inGQki2LLsDgY="/>
+                <menu:item id="fi_notifications_employee" messageCode="global_menu_find" render="false" url="/notificationses?find=ByEmployee&amp;form" z="user-managed"/>
+            </menu:category>
+        </sec:authorize>
+        <!--menu:category id="c_projectrolemap" z="FWP8yLSeEzB3ZKGSrWT0YjVkK6c="/-->
+        <menu:category id="c_financialyearreport" render="false" z="user-managed"/>
+        <menu:category id="c_individualreport" render="false" z="user-managed"/>
+        <menu:category id="c_individualfinancialreport" render="false" z="user-managed"/>
+    </menu:menu>
+</div>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_kreativ_kerp_domain_hist_ProjectRoleMapHist" modelAttribute="projectRoleMapHist" path="/projectrolemaphists" render="${empty dependencies}" z="dgJOUJgYl7Oouu+27yKTJyHFcx0=">
+        <field:select field="project" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_project" itemValue="project_id" items="${projects}" path="/projects" required="true" z="X7fX33qjECCPK8i34w72J5L6GrU="/>
+        <field:select field="role" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_role" itemValue="id" items="${mst_job_roles}" path="/mst_job_roles" required="true" z="5s2ZoNJizB8c2DfKVjsFn6ba8xA="/>
+        <field:input field="basic" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_basic" required="true" z="0zF67sKlFQm9MTO3Oz5WFv2Xk3A="/>
+        <field:input field="da" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_da" required="true" z="ZUgH26WlkKm6S1hlG+LS7fzOu4g="/>
+        <field:input field="special_allowance" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_special_allowance" required="true" z="aX1ZBgfrx4qhGt1uWWI7sZVm+Vo="/>
+        <field:input field="washing_allowance" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_washing_allowance" required="true" z="mf+kPctlIlObC8Y63Yh7JvDwOFc="/>
+        <field:input field="medical_allowance" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_medical_allowance" required="true" z="BGsjccVqLOqHzW3Mzne4pLDJIB0="/>
+        <field:input field="educational_allowance" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_educational_allowance" required="true" z="lZZ82UaseUVm/5jhvT5gJCc/gsk="/>
+        <field:input field="conveyance_allowance" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_conveyance_allowance" required="true" z="aOYX+zZJJFWGOrzH4mOXsFT6QNQ="/>
+        <field:input field="other_allowance" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_other_allowance" required="true" z="GsC+tfoMGZ3h76kE3EFbqqwis9c="/>
+        <field:input field="canteen_allowance" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_canteen_allowance" required="true" z="7BEXv3ptW8lIb04Ak7H6yeyyvqg="/>
+        <field:input field="ot_rate" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_ot_rate" required="true" z="mVe2We9skmmSQFEBV8aTBuGWAFs="/>
+        <field:input field="ex_gratia" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_ex_gratia" required="true" z="UVWxkv3C0ONfXMVRo3G+/UYn3dk="/>
+        <field:input field="hra_percentage" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_hra_percentage" required="true" z="rMPgJLp1b6CrGBM7dbW9rZt5yWg="/>
+        <field:input field="service_charges" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_service_charges" required="true" z="hAponB+yJndEXfXqY02biTMabXY="/>
+        <field:checkbox field="bonus_flag" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_bonus_flag" z="knfwK5SRHJXyUJZP6p2Lasss+DU="/>
+        <field:input field="LWF" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_LWF" required="true" z="oeRhFhn0/7zBX/Gi4CEBpxzYDpc="/>
+        <field:input field="sd" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_sd" required="true" z="P/4Bp+aEAme01ZuS+PX/TNx66WA="/>
+        <field:input field="atm" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_atm" required="true" z="ZOnTToTv8DhFZtV5vnsUNLEH8Vs="/>
+        <field:datetime dateTimePattern="${projectRoleMapHist_created_date_format}" field="created" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_created" z="SjwfjJcrB000Gmb6aonySl4yj4s="/>
+        <field:datetime dateTimePattern="${projectRoleMapHist_lastupdated_date_format}" field="lastUpdated" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_lastUpdated" z="jGQCzOC3aHYYmmLlGQs9gCKr6EM="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_kreativ_kerp_domain_hist_ProjectRoleMapHist" render="${not empty dependencies}" z="oVrA+b4WfvqgAw1k6Vg1MDnCCg8="/>
+</div>

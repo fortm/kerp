@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_hist_ProjectRoleMapHist" items="${projectrolemaphists}" z="rLWToflP250AKPfOkZy/JQyR8lU=">
+        <table:table data="${projectrolemaphists}" id="l_com_kreativ_kerp_domain_hist_ProjectRoleMapHist" path="/projectrolemaphists" z="Ze+4YmeBxV/qunJDuBJx3bNYOUk=">
+            <table:column id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_project" property="project" z="xPjqDGlTPfVHx2ZsvT1o1QQkv9k="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_role" property="role" z="Y7DWJGd2OJQ4zl/vb1IxHt9uDK0="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_basic" property="basic" z="ksrZz86gzYlW0Q70F+mZRk3uHdU="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_da" property="da" z="7k4Gz8OuJKZ8CHgEWkLlaXXt8KA="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_special_allowance" property="special_allowance" z="mCWomzUhPZBi+wkev0XG6zqD46g="/>
+            <table:column date="true" dateTimePattern="${projectRoleMapHist_created_date_format}" id="c_com_kreativ_kerp_domain_hist_ProjectRoleMapHist_created" property="created" z="LQB6DmySb6cG9KKksASTyR5jNKM="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_EmployeeBankDetails" items="${employeebankdetailses}" z="S+PfjaLRkxPee5B3E+5I5hV/RBE=">
+        <table:table data="${employeebankdetailses}" id="l_com_kreativ_kerp_domain_EmployeeBankDetails" path="/employeebankdetailses" z="aXZ3/FdydUW6CpzQ/9LPwujxLdk=">
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeBankDetails_employee" property="employee" z="jxqw2aMKnVd08UB9vVKHwZXyKGo="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeBankDetails_role" property="role" z="9XUaU0MBKNhi8n96hkZj9U3o940="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeBankDetails_bankName" property="bankName" z="22ZvDNWM/jxXwIvUgAtUw+9k7NI="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeBankDetails_account_number" property="account_number" z="V/52+WS/tbHi8xZ5jdp8R0/NgG0="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeBankDetails_atm_card_number" property="atm_card_number" z="4WkzIroUmFaeIlZneMHddYfG4v8="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeBankDetails_customer_id" property="customer_id" z="zutmGENs4MVffKxfqFQtFnhvVgI="/>
+        </table:table>
+    </page:list>
+</div>

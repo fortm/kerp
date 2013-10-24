@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="turbotimesheets/list">
+        <put-attribute name="body" value="/WEB-INF/views/turbotimesheets/list.jspx"/>
+    </definition>
+<definition extends="default" name="turbotimesheets/show">
+        <put-attribute name="body" value="/WEB-INF/views/turbotimesheets/show.jspx"/>
+    </definition>
+<definition extends="default" name="turbotimesheets/create">
+        <put-attribute name="body" value="/WEB-INF/views/turbotimesheets/create.jspx"/>
+    </definition>
+<definition extends="default" name="turbotimesheets/createMessage">
+        <put-attribute name="body" value="/WEB-INF/views/turbotimesheets/createMessage.jspx"/>
+    </definition>   
+<definition extends="default" name="turbotimesheets/createMessage1">
+        <put-attribute name="body" value="/WEB-INF/views/turbotimesheets/createMessage1.jspx"/>
+    </definition>  
+<definition extends="default" name="turbotimesheets/createMessage2">
+        <put-attribute name="body" value="/WEB-INF/views/turbotimesheets/createMessage2.jspx"/>
+    </definition>        
+<definition extends="default" name="turbotimesheets/update">
+        <put-attribute name="body" value="/WEB-INF/views/turbotimesheets/update.jspx"/>
+    </definition>
+</tiles-definitions>

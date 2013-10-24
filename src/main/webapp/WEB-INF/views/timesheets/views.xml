@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="timesheets/list">
+        <put-attribute name="body" value="/WEB-INF/views/timesheets/list.jspx"/>
+    </definition>
+<definition extends="default" name="timesheets/show">
+        <put-attribute name="body" value="/WEB-INF/views/timesheets/show.jspx"/>
+    </definition>
+<definition extends="default" name="timesheets/create">
+        <put-attribute name="body" value="/WEB-INF/views/timesheets/create.jspx"/>
+    </definition>
+    
+<definition extends="default" name="timesheets/createMessage">
+        <put-attribute name="body" value="/WEB-INF/views/timesheets/createMessage.jspx"/>
+    </definition>    
+<definition extends="default" name="timesheets/update">
+        <put-attribute name="body" value="/WEB-INF/views/timesheets/update.jspx"/>
+    </definition>
+<definition extends="default" name="timesheets/findTimesheetsByEmployee">
+        <put-attribute name="body" value="/WEB-INF/views/timesheets/findTimesheetsByEmployee.jspx"/>
+    </definition>
+<definition extends="default" name="timesheets/findTimesheetsByEmployeeAndDateEquals">
+        <put-attribute name="body" value="/WEB-INF/views/timesheets/findTimesheetsByEmployeeAndDateEquals.jspx"/>
+    </definition>
+</tiles-definitions>

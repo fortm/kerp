@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_kreativ_kerp_payment_EmployeeSalaryData" modelAttribute="employeeSalaryData" path="/employeesalarydatas" versionField="Version" z="TTNPmZpu0q4j4yaMmRcSE+JUKcc=">
+        <field:select field="employee" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_employee" itemValue="employee_id" items="${employees}" path="/employees" z="ju89p/djE2g8fL2NStRbXigI12M="/>
+        <field:input field="year" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_year" required="true" z="V6/UgjGS40ua1V7OVDLRr6F6dKo="/>
+        <field:input field="project" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_project" render="false" z="user-managed"/>
+        <field:input field="role" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_role" render="false" z="user-managed"/>
+        <field:input field="basic" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_basic" render="false" z="user-managed"/>
+        <field:input field="da" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_da" render="false" z="user-managed"/>
+        <field:input field="special_allowance" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_special_allowance" render="false" z="user-managed"/>
+        <field:input field="washing_allowance" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_washing_allowance" render="false" z="user-managed"/>
+        <field:input field="medical_allowance" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_medical_allowance" render="false" z="user-managed"/>
+        <field:input field="educational_allowance" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_educational_allowance" render="false" z="user-managed"/>
+        <field:input field="conveyance_allowance" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_conveyance_allowance" render="false" z="user-managed"/>
+        <field:input field="other_allowance" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_other_allowance" render="false" z="user-managed"/>
+        <field:input field="ot_rate" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_ot_rate" render="false" z="user-managed"/>
+        <field:input field="ex_gratia" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_ex_gratia" render="false" z="user-managed"/>
+        <field:input field="hra_percentage" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_hra_percentage" render="false" z="user-managed"/>
+        <field:input field="service_charges" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_service_charges" render="false" z="user-managed"/>
+        <field:checkbox field="bonus_flag" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_bonus_flag" render="false" z="user-managed"/>
+        <field:select field="month" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_month" items="${monthses}" path="monthses" required="true" z="uY+DlfuIpDtRywY5F5Ef2Z0oPJ0="/>
+        <field:input field="hra" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_hra" z="nHzahf6bXFHPv5K+/oyJ+jEF308="/>
+        <field:input field="gross_Earnings" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_gross_Earnings" z="BLwcmnYUjNvoWwGvSq4IPl16030="/>
+        <field:input field="canteen_allowance" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_canteen_allowance" z="F56IirzmJNfUc7UL8+KueZnLkbM="/>
+        <field:input field="ot_days" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_ot_days" z="/OoxYgAnrwFr2WtgK0vtL3560DI="/>
+        <field:input field="ot" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_ot" z="63dAsPfgKWKs+v+JDz4d5yZLlfk="/>
+        <field:input field="gross_salary" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_gross_salary" z="fE+6ZNq2iVUDbSrG3DvGG1RF4Zo="/>
+        <field:input field="WC" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_WC" z="m70qAqTauQadHsG9tDD4f1+R9Qo="/>
+        <field:input field="pf" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_pf" z="X8xLyuZS2ll+20mFa4LfEmWjflo="/>
+        <field:input field="LWF" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_LWF" z="2X5fF104z0rRLgvVCyhunGLCw+Q="/>
+        <field:input field="sd" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_sd" z="3834ouRoEAP9O1qYpPzvg0daUlA="/>
+        <field:input field="atm" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_atm" z="I/6bdqOWgKFaRk6mRcbFtMgTT0A="/>
+        <field:input field="esic" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_esic" z="1ot9dTnUd7oC7VFbDfQkA3maBHY="/>
+        <field:input field="professional_tax" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_professional_tax" z="SZI5NK8ZkXSN16udjUnMO3jgYBI="/>
+        <field:input field="total_deductions" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_total_deductions" z="xcvVZty1zOQH7NMc0BNAdVFAeRA="/>
+        <field:input field="net_payment" id="c_com_kreativ_kerp_payment_EmployeeSalaryData_net_payment" z="8vRITQYGmcqNeMYSNzpTSoRNwmU="/>
+    </form:update>
+</div>

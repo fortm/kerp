@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:mymessage id="fc_com_kreativ_kerp_payment_EmployeeSalaryData" modelAttribute="employeeSalaryData" path="/employeesalarydatas" render="${empty dependencies}" z="0e+ORhO1a2JjQIoBApnOtMVt8Hw=">
+         
+         <br/>The record for given month and year already exists for the employee. Consider deleting it first..<br/>
+         <br/>
+    </form:mymessage>
+    <form:dependency dependencies="${dependencies}" id="d_com_kreativ_kerp_payment_EmployeeSalaryData" render="${not empty dependencies}" z="X6E1zz7fe9N91CHtoXp8hAL78o4="/>
+</div>

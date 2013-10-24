@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_kreativ_kerp_domain_EmployeeProjectMap" modelAttribute="employeeProjectMap" path="/employeeprojectmaps" versionField="Version" z="ebUTAZP9rU4Bpa/5TCOXVOBrF/Y=">
+        <field:select field="project" id="c_com_kreativ_kerp_domain_EmployeeProjectMap_project" itemValue="project_id" items="${projects}" path="/projects" z="XWHsuIUXe1V57jco54yqojWGW3s="/>
+        <field:select field="employee" id="c_com_kreativ_kerp_domain_EmployeeProjectMap_employee" itemValue="employee_id" items="${employees}" path="/employees" z="F/I3G1PAilOl7fOsHWZGHnczeuU="/>
+    </form:update>
+</div>

@@ -1,0 +1,716 @@
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-10 19:39:12
+project --topLevelPackage com.kreativ.kerp --projectName KERP --java 6
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-10 19:39:16
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-10 19:40:02
+persistence setup --provider HIBERNATE --database MYSQL
+entity --class ~.domain.Employee --testAutomatically
+field number  EMPLOYEE_ID --notNull --type java.lang.Integer
+field string FIRST_NAME 
+field string LAST_NAME --notNull
+field string USER_NAME --notNull
+field string ADDRESS_LINE1 --notNull
+field string ADDRESS_LINE2 --notNull
+field string CITY --notNull
+// [failed] field string STATE --notNull
+field string COUNTRY --notNull
+enum type --class ~.reference.Gender
+enum constant --name Male
+enum constant --name Female
+focus --class ~.domain.Employee
+field enum --fieldName GENDER --type ~.reference.Gender --notNull
+field date JOINING_DATE --type java.util.Date --notNull 
+enum type --class ~.reference.Status
+enum constant --name Single
+enum constant --name Married
+focus --class ~.domain.Employee
+field enum --fieldName STATUS --type ~.reference.Status --notNull
+field string EMAIL 
+enum type --class ~.reference.JobStatus
+enum constant --name ACTIVE
+// [failed] enum constant --name NEW
+enum constant --name JOINED
+focus --class ~.domain.Employee
+field enum --fieldName JOBSTATUS --type ~.reference.JobStatus --notNull
+enum type --class ~.reference.JobRole
+enum constant --name SME
+enum constant --name SSME
+focus --class ~.domain.Employee
+field enum --fieldName JOBROLE --type ~.reference.JobRole --notNull
+entity --class ~.domain.hist.EmployeeHist --testAutomatically
+controller scaffold ~.web.Employee
+controller scaffold ~.web.hist.EmployeeHist 
+controller scaffold ~.web.hist.EmployeeHist
+hint
+controller scaffold ~.web.hist.EmployeeHistController
+focus --class ~.domain.Employee
+controller scaffold ~.web.EmployeeController
+enum type --class ~.client.shared.Gender
+
+enum constant --name MALE
+
+enum constant --name FEMALE
+
+enum type --class ~.client.shared.Status
+
+enum constant --name Single
+enum constant --name Married
+enum type --class ~.client.shared.JobStatus
+
+enum constant --name ACTIVE
+enum constant --name JOINED
+enum type --class ~.client.shared.JobRole
+
+enum constant --name SME
+enum constant --name SSME
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-10 23:10:50
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-11 06:15:09
+backup
+security setup
+focus --class ~.domain.hist.EmployeeHist
+focus --class ~.domain
+focus --class ~.domain.Employee
+finder list
+focus --class ~.domain.hist.EmployeeHist
+finder list
+finder add --finderName findEmployeeHistsByEmployee_id
+controller scaffold --class ~.web.hist.EmployeeHistController
+backup
+controller scaffold ~.web.hist.EmployeeHistController
+controller scaffold ~.web.hist.EmployeeHistController
+focus --class ~.domain.Employee
+controller scaffold ~.web.EmployeeController
+controller all --package ~.web 
+controller all --package ~.web 
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-11 08:19:10
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-11 08:19:35
+controller all --package ~.web
+// [failed] backup
+backup
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-11 08:36:49
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-11 08:37:01
+controller all --package ~.web
+focus --class ~.domain
+focus --class ~.domain.Employee
+field reference --type ~.domain.hist.EmployeeHist Employee_History
+// [failed] entity --class ~.domain.Employee --identifierField employee_id --identifierColumn employee_id  --table Employee
+entity --class ~.domain.Employee --identifierField employee_id --identifierColumn employee_id  --table Employee
+entity --class ~.domain.Employee --testAutomatically
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-11 10:26:23
+backup
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-12 09:43:22
+focus --class ~.domain.Employee
+finder list
+// [failed] finder add --finderName findEmployeesByEmployee 
+finder add --finderName findEmployeesByEmployee_id
+backup
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-12 14:32:13
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-12 15:05:44
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-12 17:12:21
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-12 17:12:37
+focus --class ~.domain.Employee
+finder list
+// [failed] entity --class ~.domain.test.testing --identifierColumn test_id 
+entity --class ~.domain.test.resting --identifierColumn rest_id 
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-12 17:31:29
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-12 17:31:40
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-12 17:33:18
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-12 17:33:25
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-12 17:34:01
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-12 17:34:12
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-12 17:36:17
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-12 17:36:24
+backup
+focus --class ~.domain.Employee
+finder list
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-12 18:19:53
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-12 18:21:54
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-12 18:34:04
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2012-03-12 18:34:13
+help jpa
+hint
+help entity
+help controller
+help controller scaffold
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2012-03-13 01:12:52
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 04:11:07
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 04:11:16
+perform eclipse
+backup
+audittimestamp setup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 04:17:30
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 04:17:44
+audittimestamp add --type ~.domain.Employee
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 04:24:36
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 04:24:48
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 04:31:31
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 04:31:49
+audittimestamp all
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:00:19
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:00:35
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:05:22
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:05:31
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:14:23
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:14:34
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:23:39
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:24:06
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:29:39
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:29:49
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:30:46
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:31:00
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:38:14
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:38:27
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:41:43
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:41:58
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:44:14
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:44:25
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 05:45:24
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 05:45:35
+backup
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 06:54:26
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 06:54:50
+backup
+entity --class ~.domain.Project --testAutomatically 
+entity --class ~.domain.AssignProject --testAutomatically 
+controller class ~.web.AssignProject 
+controller scaffold --class ~.domain.Project
+controller scaffold --class ~.domain.ProjectController
+focus --class ~.domain.Project
+controller scaffold --class ~.web.ProjectController
+controller class ~.web.AssignToProject 
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 08:14:14
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 08:14:37
+focus --class ~.domain.Project
+finder list
+controller scaffold --class ~.web.ProjectController 
+field reference --fieldName employee_id --type ~.domain.Employee --joinColumnName employee_id --notNull
+perform eclipse
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 10:58:11
+perform eclipse
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 11:32:55
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 11:33:11
+perform eclipse
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 11:34:11
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 11:34:24
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 11:35:14
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 11:35:22
+perform eclipse
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 11:37:21
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 11:37:33
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 12:02:15
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-13 12:16:04
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-13 14:32:09
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-15 03:05:16
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 03:05:36
+focus --class ~.reference
+entity --class mst_job_role --testAutomatically 
+// [failed] field string --fieldName role --notNull 
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-15 10:40:49
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 10:41:18
+// [failed] focus --class ~.reference.Mst_job_role
+// [failed] field string --fieldName role --notNull 
+// [failed] field string --fieldName job_role --notNull 
+field string --fieldName job_role --notNull 
+focus --class ~.domain
+focus --class ~.domain.Employee
+// [failed] field reference --fieldName role --type com.kreativ.kerp.reference.Mst_job_role
+// [failed] field reference --fieldName Job_role --type com.kreativ.kerp.reference.Mst_job_role
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-15 11:35:41
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 11:36:06
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-15 11:37:43
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 11:38:08
+focus --class ~.reference
+focus --class ~com.kreativ.kerp.reference
+entity --class ~.reference.Mst_job_status --testAutomatically 
+focus --class ~.domain.Employee
+field reference --fieldName job_status --type ~.reference.Mst_job_status --notNull 
+field reference --fieldName job_role --type ~.reference.Mst_job_role --notNull 
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-15 12:31:51
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 12:32:37
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 12:58:34
+focus --class ~.reference.JobRole
+controller scaffold --class ~.web.JobRoleController 
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-15 15:12:04
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 15:12:28
+focus --class ~.reference
+focus --class ~.reference.Mst_job_role
+focus --class ~.reference.Mst_job_role
+// [failed] controller scaffold --class ~.web.MstJobRoleController --entity ~.reference.Mst_Job_Role
+// [failed] controller scaffold --class ~.web.MstJobRoleController 
+controller all --package ~.web
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-15 15:37:48
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 15:37:58
+backup
+backup
+backup
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-15 21:11:45
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 21:12:20
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-15 23:14:19
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-15 23:16:17
+backup
+ email sender setup --hostServer 127.0.0.1
+field email template --class ~.web.EmployeeController
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-16 09:18:11
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-16 09:19:59
+jms setup --provider ACTIVEMQ_IN_MEMORY --destinationName
+email sender setup --hostServer smtp.gmail.com --port 587 --protocol SMTP --username kishal255raj --password RockRing2011
+email template setup --from kishal255raj@gmail.com --subject "A new employee has been created"
+// [failed] field email template --class ~.web.EmployeeController
+// [failed] field email template --class ~.web.EmployeeController
+// [failed] field email template --class ~.web.FlightController
+field email template --class ~.web.EmployeeController
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-16 13:45:36
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-16 13:45:50
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-16 17:17:50
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-17 01:33:56
+focus --class ~.web.AssignToProject
+focus --class ~.web.Mst_job_roleController
+// [failed] finder list
+focus --class ~.reference.Mst_job_role
+finder list
+finder add --finderName findMst_job_rolesByJob_roleEquals 
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-17 03:08:04
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-17 03:08:22
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-17 07:17:03
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-17 07:17:16
+focus --class ~.reference.Mst_job_role
+finder list
+finder list --depth 2
+// [failed] finder list --depth 4
+finder list --depth 3
+focus --class ~.reference.Mst_job_status
+finder list
+finder add --finderName findMst_job_statusesByJob_statusEquals
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-17 07:47:33
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-17 07:47:48
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-17 08:02:07
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-17 08:02:23
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-17 09:24:39
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-17 19:33:54
+backup
+backup
+backup
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-18 11:14:37
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-18 11:15:22
+backup
+backup
+// [failed] controller class --class ~.web.AssignToProjectController --preferredMapping /assignemployee
+controller class --class ~.web.AssignToProjectController --preferredMapping /assignemployee
+entity --class ~.domain.EmployeeProjectMap --testAutomatically 
+field reference --fieldName Project --type ~.domain.Project --notNull --cardinality MANY_TO_ONE 
+field set --fieldName Employees --type ~.domain.Employee --cardinality ONE_TO_MANY 
+controller scaffold --class ~.web.EmployeeProjectMapController 
+field reference --fieldName Supervisor --type ~.domain.Employee --notNull --cardinality ONE_TO_ONE  
+finder list
+focus --class ~.domain.Project
+finder list
+focus --class ~.domain.Employee
+finder list
+finder add --finderName findEmployeesByMst_job_role  
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-18 14:50:47
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-18 14:51:13
+web flow --flowName AssignProject
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-19 16:41:27
+focus --class ~.domain
+entity --class EmployeeProjectMap 
+entity --class ~.domain.EmployeeProjectMap  
+controller scaffold --class ~.web.EmployeeProjectMapController
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-19 21:03:45
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-20 00:50:20
+backup
+entity --class ~.domain.ProjectRoleMap 
+controller scaffold --class ~.web.ProjectRoleMapController
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-20 07:34:39
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-20 07:34:55
+entity --class ~.domain.EmployeeAccounts 
+controller scaffold --class ~.web.EmployeeAccountController
+focus --class ~.domain.Employee
+finder list
+finder list --depth 2
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-20 09:35:10
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-20 09:35:21
+focus --class ~.domain.Employee
+focus --class ~.reference.Mst_job_role
+finder list
+focus --class ~.domain.EmployeeAccounts
+finder list
+finder list
+finder list
+finder list
+finder list --depth 2
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-20 09:41:58
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-20 09:42:26
+focus --class ~.reference.Mst_job_role
+finder list
+finder list --depth 2
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-20 12:34:18
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-20 12:34:29
+perform eclipse
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-20 12:54:39
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-20 12:54:51
+backup
+entity --class ~.domain.EmployeeBankDetails
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-20 13:09:39
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-20 13:09:51
+entity --class ~.domain.EmployeeBankDetails
+controller scaffold --class ~.web.EmployeeBankDetailsController
+backup
+entity --class ~.payment.EmployeeSalaryData
+entity --class ~.domain.MonthsInYear
+controller scaffold --class ~.web.MonthsInYearController
+// [failed] backup
+web mvc update tags
+backup
+focus --class ~.payment.EmployeeSalaryData
+controller scaffold --class ~.web.EmployeeSalaryDataController 
+focus --class ~.domain.EmployeeProjectMap
+finder list
+finder add --finderName findEmployeeProjectMapsByEmployee 
+backup
+backup
+focus --class ~domain.ProjectRoleMap
+finder list --filter role
+finder list
+finder list --depth 2 --filter Role
+finder add --finderName findProjectRoleMapsByProjectAndRole
+finder list
+focus --class ~domain.Project
+finder list
+finder add --finderName findProjectsByProject_nameEquals
+backup
+focus --class ~domain.Mst_Job_Role
+// [failed] finder list
+// [failed] finder list
+focus --class ~reference.Mst_job_role
+finder list
+finder add --finderName findMst_job_rolesByJob_roleEquals
+finder add --finderName findMst_job_rolesByJob_roleEquals
+backup
+backup
+backup
+backup
+backup
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-21 18:19:48
+// [failed] pgp trust --keyId 0xC5FC814B
+// [failed] addon install bundle --bundleSymbolicName org.gvnix.web.report.roo.addon
+// [failed] addon install bundle --bundleSymbolicName org.gvnix.web.report.roo.addon
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-21 18:25:36
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-21 18:25:48
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-21 18:27:20
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-21 18:27:30
+// [failed] pgp trust --keyId 0xC5FC814B
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-21 18:27:54
+pgp trust --keyId 0xC5FC814B
+pgp trust --keyId 0xC5FC814B
+osgi obr url add --url http://gvnix.googlecode.com/svn/repo/repository.xml
+osgi obr start --bundleSymbolicName org.gvnix.web.report.roo.addon
+osgi obr url remove --url http://gvnix.googlecode.com/svn/repo/repository.xml
+addon install bundle --bundleSymbolicName org.gvnix.web.report.roo.addon
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-21 18:41:26
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-21 22:25:06
+entity --class ~payment.PFTable
+controller scaffold --class ~.web.PFTableController
+finder list
+finder add --finderName findPFTablesByTypeEquals
+// [failed] entity --class ~payment.WCTable
+entity --class ~payment.WCTable
+finder list
+controller scaffold --class ~.web.WCTableController
+backup
+backup
+entity --class ~payment.ESICTable
+finder list
+finder add --finderName findESICTablesByTypeEquals
+controller scaffold --class ~web.ESICTableController
+entity --class ~.payment.ProfTaxTable
+backup
+controller scaffold --class ~web.ProfTaxController
+finder list
+backup
+backup
+backup
+backup
+backup
+entity --class ~time.Timesheet 
+controller scaffold --class ~web.TimesheetController
+finder list
+finder add --finderName findTimesheetsByEmployee
+finder list
+finder list --depth 2
+finder add --finderName findTimesheetsByEmployeeAndDateEquals
+backup
+// [failed] backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-22 16:20:26
+focus --class ~domain.MonthsInYear
+focus --class ~domain.MonthsInYear
+finder list
+finder list --depth 2
+backup
+backup
+backup
+focus --class ~domain.hist.EmployeeHist
+finder list
+backup
+finder list
+entity --class ~domain.hist.EmployeeProjectMapHist
+controller scaffold --class ~.web.EmployeeProjectMapHistController
+focus --class ~domain.hist.EmployeeProjectMapHist
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-22 20:41:53
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-22 20:42:18
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-22 20:47:02
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-22 20:47:39
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-22 20:48:36
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-22 20:53:02
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-22 20:55:48
+hint
+entity --class ~domain.hist.ProjectRoleMapHist
+controller scaffold --class ~web.ProjectRoleMapHistController
+backup
+focus --class ~domain.ProjectRoleMap
+finder list
+finder list --depth  2 
+finder add --finderName findProjectRoleMapsByRoleAndProject
+backup
+backup
+controller class --class ~.web.ConsolidatedSalaryReportController
+entity --class ~domain.reports.ConsolidatedEmpSalaryReport
+controller scaffold --class ~web.reports.ConsolidatedEmpSalaryReportController
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 01:08:42
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 01:09:05
+// [failed] web report add --controller EmployeeSalaryDataController --reportName SalaryReport --format pdf,xls
+backup
+web report add --controller ~web.EmployeeSalaryDataController --reportName EmployeeSalaryDataReport --format pdf,xls
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 01:58:19
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 01:58:42
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 02:06:20
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 02:06:42
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 02:11:49
+web report add --controller ~web.EmployeeSalaryDataController --reportName EmployeeSalaryDataReport --format pdf,xls
+focus --class ~payment.EmployeeSalaryData
+finde list
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 02:41:23
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 02:41:40
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 02:41:41
+finder list --depth 3 --filter eq
+focus --class ~payment.EmployeeSalaryData
+finder list
+entity --class ~domain.reports.ConsolidatedEmpSalReport
+controller scaffold --class ~web.reports.ConsolidatedEmpSalReportController
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 05:34:06
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 05:34:31
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 05:42:50
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 05:43:28
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 05:47:05
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 05:50:42
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 05:53:59
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 05:54:17
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 06:01:25
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 06:01:45
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 06:03:51
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-23 06:17:40
+osgi start --url http://s.digitalface.ca/jasperoo-latest
+focus --class ~.domain.ConsolidatedEmpSalReport
+finder add --finderName findConsolidatedEmpSalReportsById
+// [failed] jasperoo add --type ~domain.reports.ConsolidatedEmpSalReport
+focus --class ~.domain.ConsolidatedEmpSalReport
+finder add --finderName findConsolidatedEmpSalReportsById
+// [failed] jasperoo add --type com.kreativ.kerp.domain.reports.ConsolidatedEmpSalReport 
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-23 13:30:15
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-24 00:00:43
+backup
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~payment.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+class --class ~.web.ReportController
+jasperoo setup 
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~payment.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~payment.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+focus --class ~payment.EmployeeSalaryData
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~payment.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+jasperoo add --type ~payment.EmployeeSalaryData 
+// [failed] addon remove --bundleSymbolicName ca.digitalface.jasperoo
+osgi uninstall --bundleSymbolicName ca.digitalface.jasperoo
+addon remove --bundleSymbolicName ca.digitalface.jasperoo
+osgi start --url http://s.digitalface.ca/jasperoo-latest
+// [failed] class --class ~.web.ReportController
+jasperoo setup
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~payment.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+// [failed] jasperoo add --type ~payment.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+focus --class ~.domain.EmployeeSalaryData
+// [failed] finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~domain.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-24 01:24:19
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-24 01:24:29
+focus --class ~.domain.EmployeeSalaryData
+// [failed] finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~domain.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+focus --class ~.domain.EmployeeSalaryData
+// [failed] finder add --finderName findEmployeeSalaryDatasById
+jasperoo add --type ~domain.EmployeeSalaryData
+// [failed] finder add --finderName findEmployeeSalaryDatasById
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-24 01:41:55
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-24 09:16:57
+focus --class ~domain.EmployeeSalaryDatalaryData
+focus --class ~domain.EmployeeSalaryData
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-24 09:22:13
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-24 09:22:28
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-24 09:24:07
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-24 09:25:11
+focus --class ~domain.EmployeeSalaryData
+finder list 
+// [failed] finder add --finderName findEmployeeSalaryDatasById
+focus --class ~payment.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] finder add --finderName findEmployeeSalaryDatasById
+backup
+finder list
+finder list
+finder list
+finder list
+finder list
+// [failed] jasperoo add --type ~domain.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~payment.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+// [failed] finder list
+focus --class ~payment.EmployeeSalaryData
+finder list
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~payment.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+finder list
+finder add --finderName findAllEmployeeSalaryDatas
+// [failed] jasperoo add --type ~payment.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~domain.EmployeeSalaryData --controllerPackage  ~web.EmployeeSalaryDataController 
+backup
+focus --class ~.domain.EmployeeBankDetails
+finder add --finderName findEmployeeBankDetailsesById
+jasperoo add --type ~domain.EmployeeBankDetails 
+addon list
+osgi uninstall --bundleSymbolicName ca.digitalface.jasperoo
+addon remove --bundleSymbolicName ca.digitalface.jasperoo
+// [failed] osgi uninstall --bundleSymbolicName ca.digitalface.jasperoo
+addon remove --bundleSymbolicName ca.digitalface.jasperoo
+osgi start --url http://s.digitalface.ca/jasperoo-latest
+// [failed] osgi start --url http://s.digitalface.ca/jasperoo-latest
+// [failed] class --class ~.web.ReportController
+jasperoo setup
+backup
+backup
+backup
+backup
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-24 18:06:27
+backup
+focus --class ~.domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDatasById
+// [failed] jasperoo add --type ~domain.EmployeeSalaryData --controllerPackage ~web.EmployeeSalaryDataController
+backup
+backup
+backup
+// [failed] controller class --class ~web.reports.ConsolidatedPermanentEmployeeReport --preferredMapping ~domain.EmployeeSalaryData
+// [failed] controller class --class ~web.reports.ConsolidatedPermanentEmployeeReport --preferredMapping ~domain.EmployeeSalaryData
+controller class --class ~web.reports.ConsolidatedPermanentEmployeeReport 
+class --class ~domain.form.yearMonth 
+// [failed] finder list
+entity --class ~domain.report.Reports 
+entity --class ~domain.report.ReportDescriptions
+focus --class ~domain.report.Reports
+controller scaffold --class ~web.ReportsController
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-24 23:11:12
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-24 23:11:32
+backup
+entity --class ~domain.TurboTimesheet
+controller scaffold --class ~web.TurboTimesheetController
+backup
+backup
+focus --class ~domain.hist.EmployeeHist
+finder list
+finder add --finderName findEmployeeHistsByEmployee
+backup
+backup
+backup
+entity --class ~domain.report.FinancialYearReport
+controller scaffold --class ~web.FinancialYearReportController
+backup
+backup
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-25 09:45:25
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-25 11:08:22
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-25 11:16:50
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-25 11:17:18
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-25 11:20:42
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-25 11:20:43
+hint
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-25 11:20:43
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-25 11:28:18
+help
+entity --class ~domain.Notifications
+controller scaffold --class ~web.NotificationController
+finder list
+finder add --finderName findNotificationsesByEmployee
+backup
+entity --class ~domain.report.IndividualReport
+// [failed] entity --class ~domain.report.IndividualReport
+// [failed] finder list
+entity --class ~domain.report.IndividualReport
+controller scaffold --class ~web.IndividualReportController
+focus --class ~domain.EmployeeSalaryData
+finder list
+finder add --finderName findEmployeeSalaryDatasByEmployee
+finder list
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-26 04:32:06
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-26 04:34:09
+finder list --depth 3 
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-26 04:48:33
+focus --class ~domain.EmployeeSalaryData
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-26 05:23:01
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-26 05:24:05
+finder list --depth 3 --filter year
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-26 05:26:03
+focus --class ~domain.report.IndividualReport
+finder list --depth 3 
+focus --class ~domain.EmployeeSalaryData
+finder add --finderName findEmployeeSalaryDataByYearEqualsAndEmployeeAndMonth
+finder add --finderName findEmployeeSalaryDataByYearAndEmployeeAndMonth
+finder list
+finder add --finderName findEmployeeSalaryDatasByEmployeeAndYearAndMonth
+entity --class ~domain.report.IndividualFinancialReport 
+// [failed] controller scaffold --class ~web.IndividualFinancialReportController
+controller scaffold --class ~web.IndividualFinancialReportController
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-26 16:05:19
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-27 11:58:55
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-27 12:02:13
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-27 12:02:29
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-27 12:03:26
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-27 12:08:59
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-27 12:19:30
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-27 12:24:17
+backup
+backup
+backup
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2012-03-28 12:07:11
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2012-03-28 13:48:24
+backup

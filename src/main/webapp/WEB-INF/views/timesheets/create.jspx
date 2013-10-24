@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_kreativ_kerp_time_Timesheet" modelAttribute="timesheet" path="/timesheets" render="${empty dependencies}" z="hdmgdnrwKpFrdsbjeYAGhGUjo5k=">
+        <field:select field="employee" id="c_com_kreativ_kerp_time_Timesheet_employee" itemValue="employee_id" items="${employees}" path="/employees" required="true" z="sE+6Fho+fIDt/hq5iYT86jwyGAY="/>
+        <field:datetime dateTimePattern="${timesheet_date_date_format}" field="date" id="c_com_kreativ_kerp_time_Timesheet_date" required="true" z="Kl1gTxpUmXq7jOtMTfm02bV91KI="/>
+        <field:select field="reporting_code" id="c_com_kreativ_kerp_time_Timesheet_reporting_code" items="${reportingcodes}" path="reportingcodes" required="true" z="KUdDRTGXIxXopcLEezkYcp8f+yI="/>
+        <field:input field="working_hours" id="c_com_kreativ_kerp_time_Timesheet_working_hours" required="true" z="/K1O4r405jF0LUUygPSI9VqJ1bA="/>
+        <field:input field="overtime_hours" id="c_com_kreativ_kerp_time_Timesheet_overtime_hours" required="true" z="pzRFGj42J6HHdZh99uQPtobT8WY="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_kreativ_kerp_time_Timesheet" render="${not empty dependencies}" z="5LFSNkTDNBdxiZFMUqxfa1TOLpo="/>
+</div>

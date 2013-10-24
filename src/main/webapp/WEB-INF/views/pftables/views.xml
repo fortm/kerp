@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="pftables/list">
+        <put-attribute name="body" value="/WEB-INF/views/pftables/list.jspx"/>
+    </definition>
+<definition extends="default" name="pftables/show">
+        <put-attribute name="body" value="/WEB-INF/views/pftables/show.jspx"/>
+    </definition>
+<definition extends="default" name="pftables/create">
+        <put-attribute name="body" value="/WEB-INF/views/pftables/create.jspx"/>
+    </definition>
+<definition extends="default" name="pftables/update">
+        <put-attribute name="body" value="/WEB-INF/views/pftables/update.jspx"/>
+    </definition>
+<definition extends="default" name="pftables/findPFTablesByTypeEquals">
+        <put-attribute name="body" value="/WEB-INF/views/pftables/findPFTablesByTypeEquals.jspx"/>
+    </definition>
+</tiles-definitions>

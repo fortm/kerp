@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show delete="false" id="ps_com_kreativ_kerp_domain_hist_EmployeeHist" object="${employeehist}" path="/employeehists" update="false" z="44hgeaQyseoW5705WzFoFSCJzT0=">
+         <field:display field="employee" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_employee" object="${employeehist}" z="Di9QFNHLu2CCmTDeO8ulKbc5HdA="/>
+         <field:display field="year" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_year" object="${employeehist}" z="EoIp4ymABYg0IsWZ8lcvl/R44h8="/>
+         <field:display field="month" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_month" object="${employeehist}" z="TgR710klkmBY79MV3W8j4B/9PpM="/>
+         <field:display field="job_role" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_job_role" object="${employeehist}" z="vzlvF+NdUB1Mj9H6yhFdbDnw+7E="/>
+         <field:display field="project" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_project" object="${employeehist}" z="ugSnnKXkVm8dZlkicc0woj0CRow="/>
+       
+         <field:display field="workArea" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_workArea" object="${employeehist}" z="f/prCVLi56xzOgorO42ZDJnhtFQ="/>
+    </page:show>
+</div>

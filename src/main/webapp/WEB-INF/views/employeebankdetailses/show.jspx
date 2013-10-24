@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kreativ_kerp_domain_EmployeeBankDetails" object="${employeebankdetails}" path="/employeebankdetailses" z="2bKAgpifCWPRjoRDTxHHOimQrTQ=">
+        <field:display field="employee" id="s_com_kreativ_kerp_domain_EmployeeBankDetails_employee" object="${employeebankdetails}" z="zBnKaMDHoMLThzeFd9LFBuxKOg4="/>
+        <field:display field="role" id="s_com_kreativ_kerp_domain_EmployeeBankDetails_role" object="${employeebankdetails}" z="QjHRh477TyxtF77zkMg3MggKqWQ="/>
+        <field:display field="bankName" id="s_com_kreativ_kerp_domain_EmployeeBankDetails_bankName" object="${employeebankdetails}" z="1tTXWyBCUm4yUK0sv7tqrcthQyY="/>
+        <br/>
+        <field:display field="account_number" id="s_com_kreativ_kerp_domain_EmployeeBankDetails_account_number" object="${employeebankdetails}" z="qZjj01e6oNqP3z9wfDsp7GlXTm0="/>
+        <br/>
+        <field:display field="atm_card_number" id="s_com_kreativ_kerp_domain_EmployeeBankDetails_atm_card_number" object="${employeebankdetails}" z="IGzq8Htvj04xq7j+D5qzlbTETVs="/>
+        <br/>
+        <field:display field="customer_id" id="s_com_kreativ_kerp_domain_EmployeeBankDetails_customer_id" object="${employeebankdetails}" z="M34LOm7UHjf+5HTX109Ek2V4uW0="/>
+    </page:show>
+</div>

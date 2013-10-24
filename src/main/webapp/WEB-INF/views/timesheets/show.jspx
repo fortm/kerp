@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kreativ_kerp_time_Timesheet" object="${timesheet}" path="/timesheets" z="e3LcvMFLJVWfcXzA2gVHPiyYS4o=">
+        <field:display field="employee" id="s_com_kreativ_kerp_time_Timesheet_employee" object="${timesheet}" z="C7VzyhzGcv4jXKpTot4kYkLkLlY="/>
+        <field:display date="true" dateTimePattern="${timesheet_date_date_format}" field="date" id="s_com_kreativ_kerp_time_Timesheet_date" object="${timesheet}" z="u8i/CxY946uopu9q/nfuZxiVcTg="/>
+        <field:display field="reporting_code" id="s_com_kreativ_kerp_time_Timesheet_reporting_code" object="${timesheet}" z="GBa9xHSWQgAiqoN+X81z8VMG2/Y="/>
+        <field:display field="working_hours" id="s_com_kreativ_kerp_time_Timesheet_working_hours" object="${timesheet}" z="2vGTnPRe1QFDbiZySC+uEgP/aiY="/>
+        <field:display field="overtime_hours" id="s_com_kreativ_kerp_time_Timesheet_overtime_hours" object="${timesheet}" z="g4FC1QOfMhK9mWLDZaXAjAyjhHg="/>
+    </page:show>
+</div>

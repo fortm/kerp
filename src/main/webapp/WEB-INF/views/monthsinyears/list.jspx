@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_MonthsInYear" items="${monthsinyears}" z="rNqGXjwU9FK2WSeg/PVg3QFNETQ=">
+        <table:table data="${monthsinyears}" id="l_com_kreativ_kerp_domain_MonthsInYear" path="/monthsinyears" z="nSPoETLV8LTOjL0otEkRFxHeIs4=">
+            <table:column date="true" dateTimePattern="${monthsInYear_from_date_date_format}" id="c_com_kreativ_kerp_domain_MonthsInYear_from_date" property="from_date" z="k/LRaZVvGDE1DROvifIkBs8Zn5c="/>
+            <table:column date="true" dateTimePattern="${monthsInYear_to_date_date_format}" id="c_com_kreativ_kerp_domain_MonthsInYear_to_date" property="to_date" z="VhX8YBvhigmE9KsflBUbxezx6dI="/>
+            <table:column id="c_com_kreativ_kerp_domain_MonthsInYear_year" property="year" z="Ft+iz+2hpfGDEMc9OwIiOEe1Zz4="/>
+            <table:column id="c_com_kreativ_kerp_domain_MonthsInYear_months" property="months" z="zYcoC/w0B8i4+QHYNva4cABMEGk="/>
+            <table:column date="true" dateTimePattern="${monthsInYear_from_salary_month_date_format}" id="c_com_kreativ_kerp_domain_MonthsInYear_from_salary_month" property="from_salary_month" render="false" z="user-managed"/>
+            <table:column date="true" dateTimePattern="${monthsInYear_to_salary_month_date_format}" id="c_com_kreativ_kerp_domain_MonthsInYear_to_salary_month" property="to_salary_month" render="false" z="user-managed"/>
+        </table:table>
+    </page:list>
+</div>

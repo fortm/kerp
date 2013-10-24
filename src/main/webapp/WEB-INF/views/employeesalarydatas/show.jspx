@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kreativ_kerp_domain_EmployeeSalaryData" object="${employeesalarydata}" path="/employeesalarydatas" update="false" z="+Tu0M8Zk1WiAnNxrShc9NjCkT0M=">
+        <field:display field="employee" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_employee" object="${employeesalarydata}" z="n/0tv7Ic10lDoweuBbu1rgB+FZI="/>
+        <br/>
+        <field:display field="year" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_year" object="${employeesalarydata}" z="xxwvou0Pa5PYO1NugFqFT8x+gpw="/>
+        <br/>
+        <field:display field="month" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_month" object="${employeesalarydata}" z="8ahw68+aYi/w1Qi89qkDGcBI70g="/>
+        <br/>
+        <field:display field="project" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_project" object="${employeesalarydata}" z="piziFWeFk2+UVPFBt/NB0GuM3JM="/>
+        <br/>
+        <field:display field="role" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_role" object="${employeesalarydata}" z="EvDAFUO2wLAjFRgZKbXEx+eGRUY="/>
+        <br/>
+        <field:display field="attendance" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_Attendance" object="${employeesalarydata}" z="S95WhzTLTJ39vr2VqECR+z0+Bf0="/>
+        <br/>
+        <br/> ---------------------------------------------------------------------
+        <br/>
+        
+        <field:display field="basic" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_basic" object="${employeesalarydata}" z="gHVxlgvE1EVO9Kt4oojrhr+QRr0="/>
+        <br/>
+        <field:display field="da" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_da" object="${employeesalarydata}" z="T3WqVRLkKQ4DUD6p742f0y64e34="/>
+        <br/>
+        <field:display field="special_allowance" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_special_allowance" object="${employeesalarydata}" z="Li7ixZ47+Lp+DWOj0pMkfPOXLIM="/>
+        <br/>
+        <field:display field="gross_salary" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_gross_salary" object="${employeesalarydata}" z="Ow//83ziQO1TG3xhVRIChEyOkWQ="/>
+        <br/>
+        <br/> ---------------------------------------------------------------------
+                <br/>
+        
+        <field:display field="washing_allowance" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_washing_allowance" object="${employeesalarydata}" z="f+U9D8hkg59Vei6eLR8iFgEUsbU="/>
+        <br/>
+        <field:display field="medical_allowance" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_medical_allowance" object="${employeesalarydata}" z="jo5hhZEQtvCTa0VyGjzgaauizRM="/>
+        <br/>
+        <field:display field="educational_allowance" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_educational_allowance" object="${employeesalarydata}" z="Rnp0ioRO0oFssfkTrDB83NWqxyg="/>
+        <br/>
+        <field:display field="conveyance_allowance" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_conveyance_allowance" object="${employeesalarydata}" z="ObXggebjLEERwqYuvh+e5muNllE="/>
+        <br/>
+        <field:display field="other_allowance" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_other_allowance" object="${employeesalarydata}" z="s22bkTM4uP1Q3XCsPX6/CCBhxCQ="/>
+        <br/>
+        <field:display field="ex_gratia" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_ex_gratia" object="${employeesalarydata}" z="adfFFV5iCj77/YWh0LNHivGQc2c="/>
+        <br/>
+        <field:display field="hra_percentage" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_hra_percentage" object="${employeesalarydata}" render="false" z="user-managed"/>
+        <br/>
+        <field:display field="bonus_flag" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_bonus_flag" object="${employeesalarydata}" render="false" z="user-managed"/>
+        <br/>
+        <field:display field="canteen_allowance" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_canteen_allowance" object="${employeesalarydata}" z="bll2iT0VrpLFL0ccGzqtcY5r0gI="/>
+        <br/>
+        <field:display field="ot_days" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_ot_days" object="${employeesalarydata}" z="91cWb5RPbROAczW4ATiUR+wzppg="/>
+        <br/>
+        <field:display field="ot_rate" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_ot_rate" object="${employeesalarydata}" z="iMsgI3a3WVuxUgQVGK1w4mYJHao="/>
+        <br/>
+        <field:display field="ot" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_ot" object="${employeesalarydata}" z="7ttfpfUImdtT1NmoXab56n9FmOg="/>
+        <br/>
+        <field:display field="hra" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_hra" object="${employeesalarydata}" z="a5BzLLh4ZjCLpd4Bh2nZxHr0Tt8="/>
+        <br/>
+        <field:display field="gross_Earnings" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_gross_Earnings" object="${employeesalarydata}" z="foZBXXtWCBwn/XWkArYJnVO0fnA="/>
+        <br/>
+        <br/> ---------------------------------------------------------------------
+        
+         <field:display field="service_charges" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_service_charges" object="${employeesalarydata}" render="false" z="user-managed"/>
+        <br/>
+        <field:display field="WC" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_WC" object="${employeesalarydata}" z="o2diikHXZRYAi/WcvDVA4S6oj60="/>
+        <br/>
+        <field:display field="pf" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_pf" object="${employeesalarydata}" z="5kSmK3b0siNdRJfBF1wA3wxJlUk="/>
+        <br/>
+        <field:display field="esic" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_esic" object="${employeesalarydata}" z="0E6ELSh4c/oYCNDqi9p8j3pZ7A8="/>
+        <br/>
+        <field:display field="professional_tax" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_professional_tax" object="${employeesalarydata}" z="OEFIhi5xsIETOH8YqvPrc86Jg2A="/>
+        <br/>
+        <field:display field="LWF" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_LWF" object="${employeesalarydata}" z="FzYiRjnLLUhhCVm6M1jJzdZsB6o="/>
+        <br/>
+        <field:display field="sd" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_sd" object="${employeesalarydata}" z="knokC4/dRqSuIE2aAOvWHB/YJ2Q="/>
+        <br/>
+        <field:display field="atm" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_atm" object="${employeesalarydata}" z="d+rc0EaLVCjMQEnFC8ODFgt0MfQ="/>
+        <br/>
+        <field:display field="total_deductions" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_total_deductions" object="${employeesalarydata}" z="mQQCk3N1U+CZFBE87XqF3LmG95Y="/>
+        <br/>
+        <br/> ---------------------------------------------------------------------
+        
+        
+        <field:display field="net_payment" id="s_com_kreativ_kerp_domain_EmployeeSalaryData_net_payment" object="${employeesalarydata}" z="ojYHpIVpDm+ECHUtRWlOe7cDzIY="/>
+    </page:show>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="esictables/list">
+        <put-attribute name="body" value="/WEB-INF/views/esictables/list.jspx"/>
+    </definition>
+<definition extends="default" name="esictables/show">
+        <put-attribute name="body" value="/WEB-INF/views/esictables/show.jspx"/>
+    </definition>
+<definition extends="default" name="esictables/create">
+        <put-attribute name="body" value="/WEB-INF/views/esictables/create.jspx"/>
+    </definition>
+<definition extends="default" name="esictables/update">
+        <put-attribute name="body" value="/WEB-INF/views/esictables/update.jspx"/>
+    </definition>
+<definition extends="default" name="esictables/findESICTablesByTypeEquals">
+        <put-attribute name="body" value="/WEB-INF/views/esictables/findESICTablesByTypeEquals.jspx"/>
+    </definition>
+</tiles-definitions>

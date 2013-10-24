@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kreativ_kerp_domain_TurboTimesheet" object="${turbotimesheet}" path="/turbotimesheets" z="OEDAHHQGIM7eIUqtoqn/CYSJNx4=">
+        <field:display field="employee" id="s_com_kreativ_kerp_domain_TurboTimesheet_employee" object="${turbotimesheet}" z="f8+hx08i+nCYsu0NRoEeV885Ly0="/>
+        <field:display field="year" id="s_com_kreativ_kerp_domain_TurboTimesheet_year" object="${turbotimesheet}" z="InMuAFlv/pqf1nArD9lJlb/IJTc="/>
+        <field:display field="month" id="s_com_kreativ_kerp_domain_TurboTimesheet_month" object="${turbotimesheet}" z="XtlEBnEDbWtxYGearnZSYmukvzU="/>
+    </page:show>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="employeebankdetailses/list">
+        <put-attribute name="body" value="/WEB-INF/views/employeebankdetailses/list.jspx"/>
+    </definition>
+<definition extends="default" name="employeebankdetailses/show">
+        <put-attribute name="body" value="/WEB-INF/views/employeebankdetailses/show.jspx"/>
+    </definition>
+<definition extends="default" name="employeebankdetailses/create">
+        <put-attribute name="body" value="/WEB-INF/views/employeebankdetailses/create.jspx"/>
+    </definition>
+<definition extends="default" name="employeebankdetailses/update">
+        <put-attribute name="body" value="/WEB-INF/views/employeebankdetailses/update.jspx"/>
+    </definition>
+<definition extends="default" name="employeebankdetailses/findEmployeeBankDetailsesById">
+        <put-attribute name="body" value="/WEB-INF/views/employeebankdetailses/findEmployeeBankDetailsesById.jspx"/>
+    </definition>
+</tiles-definitions>

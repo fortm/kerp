@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_hist_EmployeeProjectMapHist" items="${employeeprojectmaphists}" z="275QZSvgEc7i79xP9yNQhFQTG3g=">
+        <table:table data="${employeeprojectmaphists}" id="l_com_kreativ_kerp_domain_hist_EmployeeProjectMapHist" path="/employeeprojectmaphists" z="CjpsIzrZ7XRpzi+wscA1Lt0QoK4=">
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeProjectMapHist_project" property="project" z="5HhUGLMF56R857YcOCsTuA/wZI4="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeProjectMapHist_employee" property="employee" z="fCBNxWkeY1kiRkMWLLUy5aG5ISU="/>
+            <table:column date="true" dateTimePattern="${employeeProjectMapHist_created_date_format}" id="c_com_kreativ_kerp_domain_hist_EmployeeProjectMapHist_created" property="created" z="Zmfdy/0k/x1QAgIDYaicseHQLJU="/>
+            <table:column date="true" dateTimePattern="${employeeProjectMapHist_lastupdated_date_format}" id="c_com_kreativ_kerp_domain_hist_EmployeeProjectMapHist_lastUpdated" property="lastUpdated" z="3IaVDQThe84QT1WqT7TQsgtPZwU="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_EmployeeSalaryData" items="${employeesalarydatas}" z="7QJpeB4q8cgJgdSV7+Hfy/QG0Is=">
+        <table:table data="${employeesalarydatas}" id="l_com_kreativ_kerp_domain_EmployeeSalaryData" path="/employeesalarydatas" update="false" z="TcIU99dEUwRfJhGoaY48ZQeMQZ4=">
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeSalaryData_employee" property="employee" z="CPZrXl2N/4O5XkBCpXjDVgCafew="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeSalaryData_year" property="year" z="UYATV/3JRBejtfJ6ZtJi1YEdnD0="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeSalaryData_month" property="month" z="/MUTLc4d3GBy5PkjzMpZ0IrgFa8="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeSalaryData_project" property="project" z="Jayooo8uUILbHV+RVqtvALeMtzU="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeSalaryData_role" property="role" z="lbGYBOHLoHkt7MBJ+xG283UP5ho="/>
+            <table:column id="c_com_kreativ_kerp_domain_EmployeeSalaryData_Attendance" property="attendance" z="HA3PSxaZGWuaaO1l/BC07USqbpo="/>
+        </table:table>
+    </page:list>
+</div>

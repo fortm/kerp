@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByEmployeeAndYearAndMonth" id="ff_com_kreativ_kerp_domain_EmployeeSalaryData" path="/employeesalarydatas" z="vB7StPeN81LXKH1wQZg5gn+2URs=">
+        <field:select disableFormBinding="true" field="employee" id="f_com_kreativ_kerp_domain_EmployeeSalaryData_employee" itemValue="employee_id" items="${employees}" path="/employees" required="true" z="AW8an3CN2xjeYp5mptKv/2158wk="/>
+        <field:input disableFormBinding="true" field="year" id="f_com_kreativ_kerp_domain_EmployeeSalaryData_year" required="true" z="gBgVWgQBQE+cIopR6XsApKaIELM="/>
+        <field:select disableFormBinding="true" field="month" id="f_com_kreativ_kerp_domain_EmployeeSalaryData_month" items="${monthses}" path="/monthses" required="true" z="+vWB3+TwKNkYBIri9RyFzDD6KXQ="/>
+    </form:find>
+</div>

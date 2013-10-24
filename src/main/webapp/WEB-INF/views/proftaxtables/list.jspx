@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_payment_ProfTaxTable" items="${proftaxtables}" z="1powlUL7Cjs9tKhX1FaykCTuYeM=">
+        <table:table data="${proftaxtables}" id="l_com_kreativ_kerp_payment_ProfTaxTable" path="/proftaxtables" z="X3zYJm070h0giGpKYcqM10aQz+Q=">
+            <table:column id="c_com_kreativ_kerp_payment_ProfTaxTable_fromAmount" property="fromAmount" z="qfpBblBMifrbNVKmW9Gaa7PlkX8="/>
+            <table:column id="c_com_kreativ_kerp_payment_ProfTaxTable_toAmount" property="toAmount" z="trd+65ftZqlc+cvoCjtDoTquvD0="/>
+            <table:column id="c_com_kreativ_kerp_payment_ProfTaxTable_profTax" property="profTax" z="IVNrhMYhLwa0TqU69gk60/nZYMc="/>
+        </table:table>
+    </page:list>
+</div>

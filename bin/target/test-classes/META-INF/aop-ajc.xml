@@ -1,0 +1,21 @@
+<aspectj>
+<aspects>
+<aspect name="com.kreativ.kerp.domain.ProjectIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHistIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHistDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.kreativ.kerp.domain.EmployeeDataOnDemand_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.SupervisorIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.kreativ.kerp.domain.EmployeeDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHistDataOnDemand_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.ProjectDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.kreativ.kerp.domain.hist.EmployeeHistIntegrationTest_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.SupervisorIntegrationTest_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.ProjectDataOnDemand_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.ProjectIntegrationTest_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.EmployeeIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.kreativ.kerp.domain.SupervisorDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.kreativ.kerp.domain.EmployeeIntegrationTest_Roo_Configurable"/>
+<aspect name="com.kreativ.kerp.domain.SupervisorDataOnDemand_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

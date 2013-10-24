@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByEmployee_id" id="ff_com_kreativ_kerp_domain_Employee" path="/employees" z="PJzvqJBY4z9IC3utJXjygyTAWqQ=">
+        <field:input disableFormBinding="true" field="employee_id" id="f_com_kreativ_kerp_domain_Employee_employee_id" required="true" validationMessageCode="field_invalid_integer" z="KHq/hhKZPsOXOC1yraMWtWbabo4="/>
+    </form:find>
+</div>

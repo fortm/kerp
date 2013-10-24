@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_kreativ_kerp_domain_hist_EmployeeHist" modelAttribute="employeeHist" path="/employeehists" z="axUYEvjQWMJMDzA335V0lHDp4uw=">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <field:input field="employee_id" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_employee_id" validationMessageCode="field_invalid_integer" z="u3V4hkfYhMicRv1WeS+6er+Do/Q="/>
+        <field:input field="first_name" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_first_name" z="4xiS/P9yO5WGCtd5wH4nvlnCtxw="/>
+        <field:input field="last_name" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_last_name" z="IH6/fyWHLQwFW3AQOsGyQGgELpo="/>
+        <field:input field="user_name" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_user_name" z="Wg7qd7kpPXJeJzNyp5zSBmtWE2s="/>
+        <field:input field="address_line_1" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_address_line_1" z="jxCW71R/QcRztIN7LSd4uFWrdns="/>
+        <field:input field="address_line_2" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_address_line_2" z="RAqZccVXXNSqTmClzYGPI5w9kRU="/>
+        <field:input field="city" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_city" z="aDt1qbq38cD28Xfw9b5d1dJjoCU="/>
+        <field:input field="country" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_country" z="6r/Q2/8En9KBlIpmM8P5ItjPKaA="/>
+        <field:select field="gender" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_gender" items="${genders}" path="genders" z="JlcYCeRhbytfmE30oA6bYjlAig4="/>
+        <field:datetime dateTimePattern="${employeeHist_joining_date_date_format}" field="joining_date" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_joining_date" z="KdU+awtZUgKCMG2OHkPV8HJHiWY="/>
+        <field:select field="status" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_status" items="${statuses}" path="statuses" z="OxZRIZUU7lB2mQ6GD3kBhsMxNjE="/>
+        <field:input field="email" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_email" validationMessageCode="field_invalid_email" z="yp9Cztm67skCooX1/ilgtXayD6s="/>
+        <field:select field="job_status" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_job_status" items="${jobstatuses}" path="jobstatuses" z="eCtstjAZV/JWywVIYWejfUN2+kI="/>
+        <field:select field="job_role" id="c_com_kreativ_kerp_domain_hist_EmployeeHist_job_role" items="${jobroles}" path="jobroles" z="bP+PsrVNKgh8wV8KNSFwd7sANx0="/>
+    </form:update>
+</div>

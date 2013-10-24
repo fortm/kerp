@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_kreativ_kerp_domain_Project" idField="project_id" modelAttribute="project" path="/projects" versionField="Version" z="QkQ2i9fvqMNfDtcCJzrQIV3vV2Q=">
+        <field:input field="project_name" id="c_com_kreativ_kerp_domain_Project_project_name" required="true" z="/6OpQY65w06ElTYQWHD3Ej7K3As="/>
+        <field:select field="supervisor" id="c_com_kreativ_kerp_domain_Project_supervisor" itemValue="employee_id" items="${employees}" path="/employees" z="gdarSj1qKVmpYaHikX6LS08tfkM="/>
+        <field:datetime dateTimePattern="${project_start_date_date_format}" field="start_date" id="c_com_kreativ_kerp_domain_Project_start_date" required="true" z="M0gA4OFpOWYDLzODn5bQBSF74Pg="/>
+    </form:update>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_hist_EmployeeHist" items="${employeehists}" z="H+cJ8FiBz3WTrjBQmdSwgAxg7WI=">
+        <table:table data="${employeehists}" delete="false" id="l_com_kreativ_kerp_domain_hist_EmployeeHist" path="/employeehists" update="false" z="r/dM8nc7ZkuYNbm3rPx246JPfCQ=">
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_employee_id" property="employee_id" z="rz7pxIF507KnGeS0Fvz1ide5Mn8="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_first_name" property="first_name" z="mUH5Y1MhI17PfNGNZC079PHNiWY="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_last_name" property="last_name" z="ENkKJNl4hUZTF5fx+15FDbprQi4="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_user_name" property="user_name" z="HLNjtJStVJSCTagX4UO/8gGPrWE="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_address_line_1" property="address_line_1" z="XxsAGa9b2WDsTJ5o3NlnyUGNmBc="/>
+            <table:column id="c_com_kreativ_kerp_domain_hist_EmployeeHist_address_line_2" property="address_line_2" z="lIUCbjLIJiCJ8CozSoOBjTCWXKA="/>
+        </table:table>
+    </page:list>
+</div>

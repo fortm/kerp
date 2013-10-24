@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show delete="false" id="ps_com_kreativ_kerp_domain_hist_EmployeeHist" object="${employeehist}" path="/employeehists" update="false" z="44hgeaQyseoW5705WzFoFSCJzT0=">
+        <field:display field="first_name" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_first_name" object="${employeehist}" z="NngwYHSuabJ8lW7HXRJFlBYsbes="/>
+        <field:display field="last_name" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_last_name" object="${employeehist}" z="Z3n3+JYfU5zFWwtZlMTVolWGvq8="/>
+        <field:display field="user_name" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_user_name" object="${employeehist}" z="spf5j2nxl/jNkWiftcsYvAmZ3l8="/>
+        <field:display field="address_line_1" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_address_line_1" object="${employeehist}" z="3NPQDZQm1t2hBCc3ve2IIP8JewE="/>
+        <field:display field="address_line_2" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_address_line_2" object="${employeehist}" z="5NbVtPraOQMh2KtfTZulPXMlU9s="/>
+        <field:display field="city" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_city" object="${employeehist}" z="0GZo0dZTZilKW5ipxlYEAyF6wtM="/>
+        <field:display field="country" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_country" object="${employeehist}" z="e4KoXxu1zjRAcAaeVCml5+w8fd8="/>
+        <field:display field="gender" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_gender" object="${employeehist}" z="llcClTEvlYR1sApFyEK6dzFA47k="/>
+        <field:display date="true" dateTimePattern="${employeeHist_joining_date_date_format}" field="joining_date" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_joining_date" object="${employeehist}" z="8IGQf3pm75Fa6tfyvxz8Vg9/yow="/>
+        <field:display field="status" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_status" object="${employeehist}" z="ZrtdgrR7FhdE0EuMFC6a5pumtgg="/>
+        <field:display field="email" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_email" object="${employeehist}" z="bUNIStyhFu/WvcnpSvDo90ogc3Y="/>
+        <field:display field="job_status" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_job_status" object="${employeehist}" z="EygaivfoYmsTCdi+znZg5ngW6cE="/>
+        <field:display field="job_role" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_job_role" object="${employeehist}" z="vzlvF+NdUB1Mj9H6yhFdbDnw+7E="/>
+        <field:display field="employee_id" id="s_com_kreativ_kerp_domain_hist_EmployeeHist_employee_id" object="${employeehist}" z="7rfOg1WKC9ZgSHgNqg3oW7+UDyw="/>
+    </page:show>
+</div>

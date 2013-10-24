@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_kreativ_kerp_domain_Notifications" modelAttribute="notifications" path="/notificationses" versionField="Version" z="/YmdeLR9QbzEfCsrClZWypsMJSM=">
+        <field:select field="employee" id="c_com_kreativ_kerp_domain_Notifications_employee" itemValue="employee_id" items="${employees}" path="/employees" z="Fma4rTD9NV7QDuM7JOQa4ePRdJ8="/>
+        <field:select field="notified" id="c_com_kreativ_kerp_domain_Notifications_notified" items="${completeds}" path="completeds" z="AMMDIZ15B+IHWPYMJTDyyaL0YSQ="/>
+    </form:update>
+</div>

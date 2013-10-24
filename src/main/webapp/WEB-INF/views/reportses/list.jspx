@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kreativ_kerp_domain_report_Reports" items="${reportses}" z="/h620yPEa+WfoWKLcl/TUXzdckM=">
+        <table:table data="${reportses}" id="l_com_kreativ_kerp_domain_report_Reports" path="/reportses" z="AgnJt1c7rvKmAyTjYLUodxNvarw=">
+            <table:column id="c_com_kreativ_kerp_domain_report_Reports_year" property="year" z="gPUpGbTE+m15vPnDLuB6mkirfYw="/>
+            <table:column id="c_com_kreativ_kerp_domain_report_Reports_month" property="month" z="I3lnzySNSChtFpPKig1QqGV1kEk="/>
+            <table:column id="c_com_kreativ_kerp_domain_report_Reports_Options" property="options" z="O6NSzMFkl5g8rSm3oEo4DY3M7vU="/>
+        </table:table>
+    </page:list>
+</div>
