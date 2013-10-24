@@ -25,14 +25,14 @@ public class Constants {
 	
 	
 	//Formatted Report
-	public static String CompanyName = "Vedant Facility Management System";
+	public static String CompanyName = "xxx"
 	
-	public static String address1  = "Row House No 6";
-	public static String address2  = "DattaMandir Chowk";
-	public static String address3  = "Near HDFC Bank";
-	public static String address4 = "Off Sky Station Build";
-	public static String address5  = "Viman Nagar";
-	public static String address6  = "Pune - 411014";
+	public static String address1  = "add1";
+	public static String address2  = "add2";
+	public static String address3  = "add3";
+	public static String address4 = "add4";
+	public static String address5  = "add5";
+	public static String address6  = "add6";
 		
 	public static String formatPayslipHeader1 = "Basic Pay,DA,Spl Allowance, HRA, Other Allowance,Conveyance, Washing Allowance";
 	public static String formatPayslipHeader2 = "Canteen Allowance, Educational Allowance , Medical Allowance, Ex-gratia, OT Days, OT Rate, OT Pay";
